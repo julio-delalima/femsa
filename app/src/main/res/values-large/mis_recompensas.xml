@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TOOLBAR TEXT SIZE -->
+    <dimen name="mis_recompensas_toolbar_text_size">29sp</dimen>
+
+    <!-- MENSAJES CUANDO LA LISTA ESTÁ VACÍA -->
+    <dimen name="fragment_mis_recompensas_tv_titulo_text_size">36sp</dimen>
+    <dimen name="fragment_mis_recompensas_tv_descripcion_text_size">27sp</dimen>
+    <dimen name="fragment_mis_recompensas_iv_imagen_width_height">93dp</dimen>
+
+    <!-- activity_mis_recompensas ************************************************************** -->
+    <dimen name="activity_mis_recompensas_text_tus_puntos_text_size">23sp</dimen>
+    <dimen name="activity_mis_recompensas_tv_tus_puntos_text_size">36sp</dimen>
+    <dimen name="activity_mis_recompensas_iv_corcholata_width_height">41dp</dimen>
+    <dimen name="activity_mis_recompensas_view_separador_1_margin">148dp</dimen>
+    <dimen name="activity_mis_recompensas_tab_item_text_size">28sp</dimen>
+
+    <!-- item_recompensa *********************************************************************** -->
+    <dimen name="item_recompensa_iv_corcholata_width_height">33dp</dimen>
+    <dimen name="item_recompensa_tv_puntos_text_size">27sp</dimen>
+    <dimen name="item_recompensa_tv_nombre_text_size">26sp</dimen>
+
+    <!-- fragment_mis_recompensas_dialog ******************************************************* -->
+    <dimen name="fragment_mis_recompensas_dialog_tv_titulo_text_size">32sp</dimen>
+    <dimen name="fragment_mis_recompensas_dialog_tv_descripcion_text_size">25sp</dimen>
+    <dimen name="fragment_mis_recompensas_dialog_btn_text_size">28sp</dimen>
+
+    <!-- activity_detalle_recompensa *********************************************************** -->
+
+    <!-- Descripción - Términos y Condiciones -->
+    <dimen name="activity_detalle_recompensa_tv_textos_principales">28sp</dimen>
+    <!-- Vigencia - Descripción - Términos y Condiciones -->
+    <dimen name="activity_detalle_recompensa_tv_textos_secundarios">24sp</dimen>
+
+    <dimen name="activity_detalle_recompensa_tv_nombre_text_size">30sp</dimen>
+    <dimen name="activity_detalle_recompensa_iv_corcholata_width_height">38dp</dimen>
+    <dimen name="activity_detalle_recompensa_tv_puntos_text_size">26sp</dimen>
+    <dimen name="activity_detalle_recompensa_btn_text_size">28sp</dimen>
+</resources>

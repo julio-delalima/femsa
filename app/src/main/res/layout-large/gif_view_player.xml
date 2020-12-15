@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gif_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/femsa_white"
+
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/gif_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/gif_container"
+            android:layout_width="0dp"
+            android:layout_height="500dp"
+            android:layout_marginTop="42dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_circled_rewards"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/pdf_toolbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolbar_layout"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_back_white_arrow">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/gif"
+                android:textAlignment="center"
+                android:textColor="@color/femsa_white"
+                android:textSize="@dimen/text_huge_size" />
+
+            <ImageView
+                android:id="@+id/gif_download_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"
+
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:src="@drawable/ic_download_button" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/gif_stimated_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/pdf_corcholata_counter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/pdf_corcholata_counter" />
+
+        <ImageView
+            android:id="@+id/pdf_corcholata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gif_cardview"
+            app:srcCompat="@mipmap/ic_corcholata" />
+
+        <Button
+            android:id="@+id/mark_as_read_objeto_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@null"
+            android:text="@string/marcar_completado"
+            android:textAllCaps="false"
+            android:textColor="@color/femsa_red_b"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/mark_as_read_image_objeto"
+            app:layout_constraintStart_toEndOf="@+id/mark_as_read_image_objeto"
+            app:layout_constraintTop_toTopOf="@+id/mark_as_read_image_objeto" />
+
+        <ImageView
+            android:id="@+id/mark_as_read_image_objeto"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:layout_constraintEnd_toEndOf="@+id/pdf_corcholata"
+            app:layout_constraintStart_toStartOf="@+id/pdf_corcholata"
+            app:layout_constraintTop_toBottomOf="@+id/pdf_corcholata"
+            app:srcCompat="@drawable/ic_red_checkmark" />
+
+        <WebView
+            android:id="@+id/gif_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textSize="@dimen/text_big_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mark_as_read_image_objeto" />
+
+        <TextView
+            android:id="@+id/pdf_corcholata_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/text_huge_size"
+            app:layout_constraintBottom_toBottomOf="@+id/pdf_corcholata"
+            app:layout_constraintStart_toEndOf="@+id/pdf_corcholata"
+            app:layout_constraintTop_toTopOf="@+id/pdf_corcholata" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/gif_cardview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/border_bottom_gray"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gif_container">
+
+
+            <TextView
+                android:id="@+id/gif_title_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_extra_huge_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/gif_like_iv"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_conversion_absoluteHeight="48dp"
+                tools:layout_conversion_absoluteWidth="305dp" />
+
+            <ImageView
+                android:id="@+id/gif_like_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                android:src="@mipmap/ic_heart"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_conversion_absoluteHeight="48dp"
+                tools:layout_conversion_absoluteWidth="77dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/pdf_begin_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:src="@drawable/ic_gif"
+            app:layout_constraintBottom_toBottomOf="@+id/gif_container"
+            app:layout_constraintEnd_toEndOf="@+id/gif_container"
+            app:layout_constraintStart_toStartOf="@+id/gif_container"
+            app:layout_constraintTop_toTopOf="@+id/gif_container" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

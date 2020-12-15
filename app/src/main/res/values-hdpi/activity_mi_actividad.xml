@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TOOLBAR ******************************************************************************* -->
+    <dimen name="tv_activity_mi_actividad_toolbar_title_text_size">20sp</dimen>
+
+    <!-- MIS PUNTOS **************************************************************************** -->
+    <dimen name="tv_activity_mi_actividad_mi_nivel_text_size">23sp</dimen>
+    <dimen name="iv_activity_mi_actividad_mi_nivel_width_height">65dp</dimen>
+    <dimen name="texto_activity_mi_actividad_mis_puntos_text_size">14sp</dimen>
+    <dimen name="iv_activity_mi_actividad_corcholata_width_height">15dp</dimen>
+
+    <!-- PROGRAMAS ACTIVOS/TERMINADOS ********************************************************************* -->
+    <dimen name="tv_activity_mi_actividad_programas_activos_terminados_text_size">30sp</dimen>
+    <dimen name="texto_activity_mi_actividad_programas_activos_terminados_text_size">11sp</dimen>
+
+    <!-- MEDIDORES **************************************************************************** -->
+    <dimen name="iv_activity_mi_actividad_medidor_height">60dp</dimen>
+    <dimen name="imagen_activity_mi_actividad_medidor_width_height">30dp</dimen>
+    <dimen name="texto_activity_mi_actividad_medidor_text_size">9sp</dimen>
+    <dimen name="tv_activity_mi_actividad_medidor_progreso_text_size">13sp</dimen>
+    <dimen name="tv_activity_mi_actividad_medidor_progreso_separador_text_size">9sp</dimen>
+
+</resources>

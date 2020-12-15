@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <corners
+        android:radius="6dp"/>
+
+    <solid
+        android:color="@color/femsa_green_a"/>
+
+    <padding
+        android:top="4dp"
+        android:left="8dp"
+        android:right="8dp"
+        android:bottom="4dp"/>
+
+</shape>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.femsa.sferea.Utilities.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/full_swipe_notificacion"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:dragFromEdge="right">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/borrar_notificacion_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/femsa_red_b"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/trash_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="36dp"
+            android:scaleType="centerCrop"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:src="@drawable/ic_trash"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/delete"
+            android:textAlignment="center"
+            android:textColor="@color/femsa_white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/trash_icon"
+            app:layout_constraintStart_toStartOf="@+id/trash_icon"
+            app:layout_constraintTop_toBottomOf="@+id/trash_icon" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/notificacion_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/border_bottom_gray"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/retar_label"
+            android:textColor="@color/femsa_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/notificacion_texto_descripcion_tv" />
+
+        <ImageView
+            android:id="@+id/notification_flag_indicator_iv"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="@+id/notificacion_titulo_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/notificacion_titulo_tv"
+            app:srcCompat="@drawable/ic_gray_flag_notification" />
+
+        <TextView
+            android:id="@+id/notificacion_fecha_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15/Dic/2019"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/notificacion_titulo_tv"
+            app:layout_constraintTop_toBottomOf="@+id/notificacion_titulo_tv" />
+
+        <TextView
+            android:id="@+id/notificacion_hora_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="07:59 P.M."
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/notificacion_fecha_tv"
+            app:layout_constraintStart_toEndOf="@+id/notificacion_fecha_tv"
+            app:layout_constraintTop_toTopOf="@+id/notificacion_fecha_tv" />
+
+        <TextView
+            android:id="@+id/notificacion_texto_descripcion_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:minLines="4"
+            android:text="Estimado victor Dawson\nuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwuuwudsfdsf"
+            android:textColor="@color/femsa_black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/notificacion_titulo_tv"
+            app:layout_constraintStart_toStartOf="@+id/notificacion_fecha_tv"
+            app:layout_constraintTop_toBottomOf="@+id/notificacion_fecha_tv" />
+
+        <TextView
+            android:id="@+id/notificacion_titulo_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="8dp"
+            android:text="Practica tus conocimientos"
+            android:textColor="@color/femsa_black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/notification_circle_indicator_iv"
+            app:layout_constraintEnd_toStartOf="@+id/notification_flag_indicator_iv"
+            app:layout_constraintStart_toEndOf="@+id/notification_circle_indicator_iv"
+            app:layout_constraintTop_toTopOf="@+id/notification_circle_indicator_iv" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/notification_circle_indicator_iv"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:src="@color/femsa_red_b"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.femsa.sferea.Utilities.SwipeRevealLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:id="@+id/nsv_activity_por_autorizar_solicitante"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:visibility="invisible"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/femsa_white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/activity_por_autorizar_solicitante_toolbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:theme="?attr/actionBarTheme"
+            android:background="@drawable/toolbar_layout"
+            android:elevation="4dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:navigationIcon="@drawable/ic_back_white_arrow"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/femsa_white"
+                android:textSize="@dimen/tv_activity_detalle_celula_entrenamiento_toolbar_title_text_size"
+                android:text="@string/celula_entrenamiento_item_estado_por_autorizar"
+                android:ellipsize="end"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <!-- FECHA Y NÚMERO DE SOLICITUD **************************************************************** -->
+        <include
+            android:id="@+id/layout_activity_por_autorizar_solicitante_datos_solicitud"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_fecha_numero_solicitud"
+            app:layout_constraintTop_toBottomOf="@id/activity_por_autorizar_solicitante_toolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- DATOS SOLICITANTE ***************************************************************** -->
+        <include
+            android:id="@+id/layout_activity_por_autorizar_solicitante_datos_solicitante"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_datos_solicitante"
+            app:layout_constraintTop_toBottomOf="@id/layout_activity_por_autorizar_solicitante_datos_solicitud"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- PARTICIPANTES ********************************************************************* -->
+        <include
+            android:id="@+id/layout_activity_por_autorizar_solicitante_participantes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_participantes"
+            app:layout_constraintTop_toBottomOf="@id/layout_activity_por_autorizar_solicitante_datos_solicitante"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- INFORMACIÓN DE LA INDUCCIÓN ******************************************************* -->
+        <include
+            android:id="@+id/layout_activity_por_autorizar_solicitante_informacion_induccion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_informacion_induccion"
+            app:layout_constraintTop_toBottomOf="@id/layout_activity_por_autorizar_solicitante_participantes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- RANGO DE FECHAS ******************************************************************* -->
+        <include
+            android:id="@+id/layout_activity_por_autorizar_solicitante_rango_fechas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_rango_fechas"
+            app:layout_constraintTop_toBottomOf="@id/layout_activity_por_autorizar_solicitante_informacion_induccion"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- AUTORIZACIÓN ********************************************************************** -->
+        <include
+            android:id="@+id/layout_activity_por_autorizar_solicitante_autorizacion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_autorizacion"
+            app:layout_constraintTop_toBottomOf="@id/layout_activity_por_autorizar_solicitante_rango_fechas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+        <!-- GUIDELINES ************************************************************************ -->
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

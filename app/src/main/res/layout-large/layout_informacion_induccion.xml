@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_informacion_induccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="4dp"
+                android:text="@string/layout_informacion_induccion_titulo"
+                android:textColor="@color/femsa_black"
+                android:textStyle="bold"
+                android:textSize="@dimen/tv_informacion_induccion_text_size"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/gl_layout_informacion_induccion_1"/>
+
+            <TextView
+                android:id="@+id/tv_tema_general"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="4dp"
+                android:text="@string/layout_informacion_induccion_tema_general"
+                android:textColor="@color/femsa_black"
+                android:textSize="@dimen/tv_tema_general_text_size"
+                app:layout_constraintTop_toBottomOf="@id/tv_informacion_induccion"
+                app:layout_constraintStart_toEndOf="@id/gl_layout_informacion_induccion_1"/>
+
+            <TextView
+                android:id="@+id/tv_layout_informacion_induccion_tema_general"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                tools:text="Historia de Coca Cola FEMSA y nuestras marcas"
+                android:textColor="@color/femsa_black"
+                android:textSize="@dimen/tv_activity_detalle_celula_entrenamiento_tema_general_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toEndOf="@id/gl_layout_informacion_induccion_1"
+                app:layout_constraintTop_toBottomOf="@id/tv_tema_general" />
+
+            <TextView
+                android:id="@+id/tv_pais_solicitante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="4dp"
+                android:text="@string/layout_informacion_induccion_pais_solicitante"
+                android:textColor="@color/femsa_black"
+                android:textSize="@dimen/tv_tema_general_text_size"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@id/tv_layout_informacion_induccion_tema_general"
+                app:layout_constraintStart_toEndOf="@id/gl_layout_informacion_induccion_1"/>
+
+            <TextView
+                android:id="@+id/tv_layout_informacion_induccion_pais_solicitante"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="PAÍS SOLICITANTE"
+                android:textColor="@color/femsa_black"
+                android:textSize="@dimen/tv_activity_detalle_celula_entrenamiento_tema_general_text_size"
+                android:visibility="gone"
+                android:drawablePadding="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toEndOf="@id/gl_layout_informacion_induccion_1"
+                app:layout_constraintTop_toBottomOf="@id/tv_pais_solicitante" />
+
+            <TextView
+                android:id="@+id/tv_pais_receptor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="4dp"
+                android:text="@string/layout_informacion_induccion_pais_receptor"
+                android:textColor="@color/femsa_black"
+                android:textSize="@dimen/tv_tema_general_text_size"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@id/tv_layout_informacion_induccion_pais_solicitante"
+                app:layout_constraintStart_toEndOf="@id/gl_layout_informacion_induccion_1"/>
+
+            <TextView
+                android:id="@+id/tv_layout_informacion_induccion_pais_receptor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="PAÍS RECEPTOR"
+                android:textColor="@color/femsa_black"
+                android:textSize="@dimen/tv_activity_detalle_celula_entrenamiento_tema_general_text_size"
+                android:visibility="gone"
+                android:drawablePadding="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toEndOf="@id/gl_layout_informacion_induccion_1"
+                app:layout_constraintTop_toBottomOf="@id/tv_pais_receptor" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_layout_informacion_induccion_temas_especificos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_layout_informacion_induccion_pais_receptor"
+                app:layout_constraintStart_toEndOf="@id/gl_layout_informacion_induccion_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/femsa_red_d"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/gl_layout_informacion_induccion_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gl_layout_informacion_induccion_1"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.07"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

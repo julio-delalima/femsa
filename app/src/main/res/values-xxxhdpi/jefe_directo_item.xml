@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="civ_jefe_directo_item_foto_width_height">68dp</dimen>
+    <dimen name="iv_jefe_directo_item_pais_width_height">33dp</dimen>
+
+    <dimen name="cb_jefe_directo_item_autorizar_width_height">23dp</dimen>
+    <dimen name="tv_jefe_directo_item_texto_primario_text_size">16sp</dimen>
+    <dimen name="tv_jefe_directo_item_texto_secundario_text_size">13sp</dimen>
+</resources>

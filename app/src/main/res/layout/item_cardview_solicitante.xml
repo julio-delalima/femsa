@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/tv_nombre_solicitante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/layout_datos_solicitante_nombre_solicitante"
+        android:textColor="@color/femsa_gray_d"
+        android:textSize="@dimen/tv_layout_datos_solicitante_titulo_text_size"
+        app:layout_constraintStart_toEndOf="@id/gl_layout_datos_solicitante_1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_layout_datos_solicitante_nombre_solicitante"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="16dp"
+
+        android:textColor="@color/femsa_black"
+        android:textSize="@dimen/tv_layout_datos_solicitante_informacion_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/gl_layout_datos_solicitante_1"
+        app:layout_constraintTop_toBottomOf="@id/tv_nombre_solicitante" />
+
+    <TextView
+        android:id="@+id/tv_posicion_solicitante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/layout_datos_solicitante_posicion_solicitante"
+        android:textColor="@color/femsa_gray_d"
+        android:textSize="@dimen/tv_layout_datos_solicitante_titulo_text_size"
+        app:layout_constraintStart_toEndOf="@id/gl_layout_datos_solicitante_1"
+        app:layout_constraintTop_toBottomOf="@id/tv_layout_datos_solicitante_nombre_solicitante" />
+
+    <TextView
+        android:id="@+id/tv_layout_datos_solicitante_posicion_solicitante"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="16dp"
+
+        android:textColor="@color/femsa_black"
+        android:textSize="@dimen/text_medium_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/gl_layout_datos_solicitante_1"
+        app:layout_constraintTop_toBottomOf="@id/tv_posicion_solicitante" />
+
+    <TextView
+        android:id="@+id/tv_pais_solicitante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/layout_datos_solicitante_pais_solicitante"
+        android:textColor="@color/femsa_gray_d"
+        android:textSize="@dimen/tv_layout_datos_solicitante_titulo_text_size"
+        app:layout_constraintStart_toEndOf="@id/gl_layout_datos_solicitante_1"
+        app:layout_constraintTop_toBottomOf="@id/tv_layout_datos_solicitante_posicion_solicitante" />
+
+    <ImageView
+        android:id="@+id/imagen_pais_solicitante_uno"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintStart_toStartOf="@+id/tv_pais_solicitante"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pais_solicitante"
+        app:srcCompat="@drawable/sin_imagen" />
+
+    <TextView
+        android:id="@+id/tv_layout_datos_solicitante_pais_solicitante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/Corporativo"
+        android:textColor="@color/femsa_black"
+        android:textSize="@dimen/tv_layout_datos_solicitante_informacion_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/imagen_pais_solicitante_uno"
+        app:layout_constraintStart_toEndOf="@+id/imagen_pais_solicitante_uno"
+        app:layout_constraintTop_toTopOf="@+id/imagen_pais_solicitante_uno" />
+
+    <TextView
+        android:id="@+id/tv_correo_electronico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/layout_datos_solicitante_correo_electronico"
+        android:textColor="@color/femsa_gray_d"
+        android:textSize="@dimen/tv_layout_datos_solicitante_titulo_text_size"
+        app:layout_constraintStart_toEndOf="@id/gl_layout_datos_solicitante_1"
+        app:layout_constraintTop_toBottomOf="@id/tv_layout_datos_solicitante_pais_solicitante" />
+
+    <TextView
+        android:id="@+id/tv_layout_datos_solicitante_correo_eletronico"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+
+        android:textColor="@color/femsa_black"
+        android:textSize="@dimen/tv_layout_datos_solicitante_informacion_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/gl_layout_datos_solicitante_1"
+        app:layout_constraintTop_toBottomOf="@id/tv_correo_electronico" />
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/femsa_red_d"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/gl_layout_datos_solicitante_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_layout_datos_solicitante_1"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.femsa.sferea"
+    android:installLocation="preferExternal">
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:glEsVersion="0x00020000" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_I" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".Utilities.AppTalentoRHApplication"
+        android:allowBackup="false"
+        android:extractNativeLibs="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher_foreground"
+        android:label="My KOF Learning"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:process="com.femsa.sferea"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:label, android:allowBackup">
+
+        <provider
+            android:name=".Utilities.GenericFileProvider"
+            android:authorities="com.femsa.sferea.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name=".home.inicio.programa.objetosAprendizaje.Juegos.multijugador.RetarOponenteActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".home.celulasDeEntrenamiento.detalle.porAutorizar.AgregarParticipante.EditarParticipantesPorAutorizarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.inicio.programa.objetosAprendizaje.CharlaConExperto.VedeoCharlaConExpertoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".masterkiwi.SDLActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.inicio.programa.objetosAprendizaje.Juegos.GameLoadingActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.inicio.programa.objetosAprendizaje.Enlace.EnlaceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.inicio.programa.objetosAprendizaje.Encuesta.DetalleEncuestaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.inicio.programa.objetosAprendizaje.Enlace.EnlaceWebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.celulasDeEntrenamiento.celulas.CrearCelula.CrearCelulaTres.Calendario.UnDiaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.inicio.programa.objetosAprendizaje.Vedeoconferencia.VideoConferenciaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.celulasDeEntrenamiento.celulas.CrearCelula.ConfirmarCelula.ConfirmarCelulaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.notificaciones.detalle.DetalleNotificacionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.miCuenta.configuracion.ConfiguracionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.miCuenta.misRecompensas.listado.MisRecompensasActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.miCuenta.misRecompensas.detalle.DetalleRecompensaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.celulasDeEntrenamiento.celulas.CrearCelula.CrearCelulaTres.Calendario.RangoFechasActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.celulasDeEntrenamiento.celulas.CrearCelula.CrearCelulaTres.ObtenerFacilitador.ObtenerAreaYFacilitadorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.celulasDeEntrenamiento.detalle.porProgramar.facilitador.confirmarHorario.ConfirmarHorarioActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.celulasDeEntrenamiento.celulas.CrearCelula.CrearCelulaTres.CrearCelulaTresActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.celulasDeEntrenamiento.detalle.porProgramar.PorProgramarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.celulasDeEntrenamiento.detalle.programado.ProgramadoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.celulasDeEntrenamiento.celulas.CrearCelula.CrearCelulaDos.CrearCelulaDosActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.inicio.programa.objetosAprendizaje.ObjetoAprendizajeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+
+        </activity>
+        <activity
+            android:name=".home.inicio.programa.objetosAprendizaje.Checklist.ChecklistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.celulasDeEntrenamiento.celulas.CrearCelula.CrearCelulaUnoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.celulasDeEntrenamiento.celulas.ActivityDialog"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.inicio.programa.objetosAprendizaje.Evaluacion.EvaluacionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.celulasDeEntrenamiento.detalle.porProgramar.facilitador.delegarSolicitud.NoResponsableActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.celulasDeEntrenamiento.detalle.porProgramar.facilitador.delegarSolicitud.NoDisponibleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.celulasDeEntrenamiento.detalle.porProgramar.facilitador.PorProgramarFacilitadorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.celulasDeEntrenamiento.detalle.porAutorizar.PorAutorizarActivity"
+            android:screenOrientation="portrait" /> <!-- <activity android:name=".activity.CelulasEntrenamiento.CelulasActivity"></activity> -->
+        <activity
+            android:name=".home.inicio.programa.objetosAprendizaje.VideoInteractivo.VideoInteractivoMainActivity"
+            android:configChanges="orientation|screenSize"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".home.inicio.programa.objetosAprendizaje.VideoPlayer.VideoPlayerMainActivity"
+            android:configChanges="orientation|screenSize"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".home.miCuenta.miActividad.MiActividadActivity"
+            android:screenOrientation="portrait" /> <!-- <activity android:name=".activity.CelulasEntrenamiento.CelulasActivity"></activity> -->
+        <!-- <activity android:name=".activity.CelulasEntrenamiento.CelulasActivity"></activity> -->
+        <activity
+            android:name=".home.celulasDeEntrenamiento.detalle.porAutorizar.jefeDirecto.PorAutorizarJefeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.celulasDeEntrenamiento.detalle.contactarAdministrador.ContactarAdministradorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.miCuenta.miRanking.detalle.DetalleRankingActivity"
+            android:configChanges="locale"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".SplashScreen"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login.LoginActivity"
+            android:configChanges="locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.inicio.programa.objetosAprendizaje.GIFPlayer.FullGIFActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.miCuenta.miRanking.RankingActivity"
+            android:configChanges="locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.legal.LegalActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_legal"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".home.miCuenta.miPerfil.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".home.inicio.programa.objetosAprendizaje.PDFViewer.FULLPDFActivity" />
+        <activity
+            android:name=".home.inicio.programa.detallePrograma.DetalleProgramaActivity"
+            android:configChanges="locale"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter android:label="@string/deep_link_detalle">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="mykoflearning.com"
+                    android:pathPrefix="/apifemsa/homeCards"
+                    android:scheme="https" />
+            </intent-filter>
+<!--            <intent-filter android:label="@string/deep_link_detalle">-->
+<!--                <action android:name="android.intent.action.VIEW" />-->
+
+<!--                <category android:name="android.intent.category.DEFAULT" />-->
+<!--                <category android:name="android.intent.category.BROWSABLE" />-->
+<!--                <data-->
+<!--                    android:host="mykoflearning.com"-->
+<!--                    android:pathPrefix="/apifemsa/api/usuarioData/recupera"-->
+<!--                    android:scheme="https" />-->
+<!--&lt;!&ndash;                <data&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:host="femsa.sferea.com"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:pathPrefix="/apifemsa/homeCards"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:scheme="http" />&ndash;&gt;-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".home.inicio.programa.objetosAprendizaje.GIFPlayer.GIFActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.inicio.programa.objetosAprendizaje.PDFViewer.PDFActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".home.inicio.componentes.activity.HomeActivity"
+            android:configChanges="locale"
+            android:label="@string/title_activity_home_navigation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="Celulas" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="Gusanos" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".registro.Registry"
+            android:configChanges="locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".registro.RegistryPart2"
+            android:configChanges="locale"
+            android:screenOrientation="portrait" />
+        <activity android:name=".home.inicio.programa.objetosAprendizaje.Ebook.FullEbookActivity" />
+        <activity
+            android:name=".home.inicio.programa.objetosAprendizaje.Ebook.EbookActivity"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.femsa.sferea.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service android:name=".Utilities.FirebaseMessagingPush"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

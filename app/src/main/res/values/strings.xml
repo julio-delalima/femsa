@@ -1,0 +1,547 @@
+<resources>
+    <!-- UserPreferences -->
+    <!-- Used within App -->
+    <string name="version" translatable="false">Ver: 1.6.6.19</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="password_placeholder">Contraseña</string>
+    <string name="log_in">Iniciar</string>
+    <string name="welcome">¡Bienvenido!</string>
+    <string name="registry_instructions">Por favor, escribe tu número de empleado.</string>
+    <string name="login_full">Iniciar Sesión</string>
+    <string name="log_out">Cerrar sesión</string>
+    <string name="profile_mail">Correo</string>
+    <string name="all_programs_button">Todos los Programas</string>
+    <string name="update_button">Actualizar</string>
+    <string name="legal">Legal</string>
+    <string name="wrong_password_message">El nombre de usuario o la contraseña son incorrectas, favor de verificarlo.</string>
+    <string name="forgotten_password"><u>¿Olvidaste tu contraseña?</u></string>
+
+    <string name="popup_pass_requs_title">Tu contraseña debe tener:</string>
+    <string name="pass_req_01">8 o más caracteres</string>
+    <string name="pass_req_02">Letras mayúsculas</string>
+    <string name="pass_req_03">Letras minúsculas</string>
+    <string name="pass_req_04">Número(s)</string>
+    <string name="pass_req_05">Caracter especial y/o de puntuación</string>
+
+    <string name="begin_text">Iniciar</string>
+    <string name="menu_home">Inicio</string>
+    <string name="menu_cells">Células de entrenamiento</string>
+    <string name="menu_legal">Legal</string>
+    <string name="menu_notif">Notificaciones</string>
+
+    <string name="title_activity_home_navigation">HomeActivityNavigation</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="my_profile">Mi Perfil</string>
+    <string name="my_profile_ranking">Mi Ranking</string>
+    <string name="my_profile_stats">Mi Actividad</string>
+    <string name="my_profile_rewards">Mis Recompensas</string>
+    <string name="my_profile_settings">Ver configuración</string>
+    <string name="country_mexico">México</string>
+    <string name="drawer_title_my_Account">Mi Cuenta</string>
+    <string name="my_profile_emp_number">No. de Empleado</string>
+    <string name="my_profile_pos_desc">Descripción de la posición</string>
+    <string name="my_profile_contribution">Nivel de contribución</string>
+    <string name="my_profile_functional_area">Nombre del área funcional</string>
+    <string name="my_profile_denomination">Denominación centro de coste</string>
+    <string name="my_profile_country">País</string>
+    <string name="my_profile_direct_boss">Nombre jefe directo</string>
+    <string name="my_profile_directboss_number">No. de empleado de jefe directo</string>
+    <string name="my_profile_info">En caso de que tus datos sean incorrectos por favor comunícate con tu área de Recursos Humanos.</string>
+    <string name="empty_fields">Los campos son requeridos.</string>
+    <string name="server_error">Ocurrió un error en el servidor, intente de nuevo más tarde.</string>
+    <string name="timeout">No se pudo procesar su solicitud, por favor intentelo más tarde.</string>
+    <string name="no_internet">No hay conexión a internet.</string>
+    <string name="user_doesnt_exists">Lo sentimos el número de empleado que ingreso no existe, verifiquelo</string>
+    <string name="blocked_user">Máximo de 5 intentos de inicio de sesión, su usuario ha sido bloqueado</string>
+    <string name="kofsection_temario">Temario</string>
+    <string name="title_activity_legal">LegalActivity</string>
+    <string name="legal_terms">Términos y condiciones</string>
+    <string name="legal_privacy">Aviso de privacidad</string>
+    <string name="gif">GIF</string>
+    <string name="pdf">Documento PDF</string>
+    <string name="my_ranking">Mi Ranking</string>
+    <string name="my_ranking_earned_points">Mis Puntos \nGanados</string>
+    <string name="my_ranking_active_programs">Programas \n activos</string>
+    <string name="my_ranking_finished_programs">Programas \n terminados</string>
+    <string name="my_ranking_active">\t\t\tActivos\t\t\t</string>
+    <string name="my_ranking_history">\t\t\tHistorial\t\t\t</string>
+    <string name="video">Video</string>
+    <string name="what_is_app">¿Qué es App Talento RH?</string>
+    <string name="my_profile_emp_number_full">Número de empleado</string>
+    <string name="next">Siguiente</string>
+    <string name="registry_instructions_2">Por favor, indícanos tu fecha de nacimiento.</string>
+    <string name="birth_date">Fecha de nacimiento</string>
+    <string name="cancel">Cancelar</string>
+    <string name="accept_terms_and_advice"><u>Acepto Términos y Condiciones y Aviso de Privacidad.</u></string>
+    <string name="january">Enero</string>
+    <string name="february">Febrero</string>
+    <string name="march">Marzo</string>
+    <string name="april">Abril</string>
+    <string name="may">Mayo</string>
+    <string name="june">Junio</string>
+    <string name="july">Julio</string>
+    <string name="august">Agosto</string>
+    <string name="september">Septiembre</string>
+    <string name="october">Octubre</string>
+    <string name="november">Noviembre</string>
+    <string name="december">Diciembre</string>
+    <string name="active_session">Ya existe una sesión activa.</string>
+    <string name="are_you_new"><u>¿Eres nuevo?</u></string>
+    <string name="are_you_new_2"><u> Regístrate aquí</u></string>
+    <string name="date_wrong">La fecha de nacimiento es incorrecta, favor de verificar.</string>
+    <string name="accept_first">Debes aceptar términos y condiciones primero.</string>
+    <string name="password_success">La contraseña se actualizó correctamente.</string>
+    <string name="password_match">La contraseña y su confirmación no coinciden, favor de verificar.</string>
+    <string name="ebook">E-book</string>
+    <string name="recover_password">Recuperar Contraseña</string>
+    <string name="write_your_mail">Ingresa tu correo electrónico \n para renovar tu contraseña.</string>
+    <string name="wrong_mail">Lo sentimos el correo ingresado no está registrado, verifíquelo.</string>
+    <string name="existing_mail">Lo sentimos el correo ingresado ya está registrado, verifíquelo.</string>
+    <string name="popup_update_your_data">Actualiza tus datos</string>
+    <string name="firstlogin_instructions">Por favor, crea una contraseña personalizada y añade tu correo electrónico.</string>
+    <string name="password_confirm">Confirmar contraseña</string>
+    <string name="home_browser">Buscar</string>
+    <string name="wrong_pattern">El patrón de la contraseña es incorrecto.</string>
+    <string name="youlike">Te gusta</string>
+    <string name="youdislike">Ya no te gusta</string>
+    <string name="fragment_celulas_de_entrenamiento_uno_titulo">Células de\nEntrenamiento (CDE)</string>
+    <string name="fragment_celulas_de_entrenamiento_uno_descripcion">Es una herramienta de desarrollo que
+        te permite conocer, aprender o indagar acerca de un tema o proceso específico a través
+        de sesiones con los dueños de los procesos y expertos funcionales en otra División
+        o Unidad Operativa.</string>
+
+    <!-- CÉLULAS DE ENTRENAMIENTO ************************************************************** -->
+    <string name="fragment_celulas_de_entrenamiento_dos_titulo">Inducción</string>
+    <string name="fragment_celulas_de_entrenamiento_dos_descripcion">Es una herramienta que te permite conocer y
+    aprender los procesos básicos de tu rol a través de los dueños de procesos y/o expertos funcionales. Ésta
+    aplica para nuevos ingresos y movimientos internos.</string>
+    <string name="celula_entrenamiento_item_tipo_induccion">Inducción</string>
+    <string name="celula_entrenamiento_item_tipo_celula_entrenamiento">Células de Entrenamiento</string>
+
+    <string name="celula_entrenamiento_item_estado_por_autorizar">Por Autorizar</string>
+    <string name="celula_entrenamiento_item_estado_por_programar">Por Programar</string>
+    <string name="celula_entrenamiento_item_estado_programado">Programado</string>
+    <string name="celula_entrenamiento_item_categoria_autorizador">Autorizador</string>
+    <string name="celula_entrenamiento_item_categoria_solicitante">Solicitante</string>
+    <string name="celula_entrenamiento_item_categoria_facilitador">Facilitador</string>
+    <string name="celula_entrenamiento_item_categoria_participante">Participante</string>
+    <string name="layout_datos_solicitante_titulo">Datos Solicitante</string>
+    <string name="layout_datos_solicitante_numero_empleado">Número de empleado</string>
+
+    <string name="layout_datos_solicitante_nombre_solicitante">Nombre de solicitante</string>
+    <string name="layout_datos_solicitante_posicion_solicitante">Posición solicitante</string>
+    <string name="layout_datos_solicitante_pais_solicitante">País solicitante</string>
+    <string name="layout_datos_solicitante_correo_electronico">Correo electrónico</string>
+    <string name="layout_participantes_titulo">Participantes</string>
+    <string name="layout_informacion_induccion_titulo">Información de la Inducción</string>
+
+    <string name="layout_informacion_celula_titulo">Información de la Célula</string>
+
+    <string name="layout_informacion_induccion_tema_general">Tema general</string>
+    <string name="layout_informacion_induccion_pais_solicitante">País solicitante</string>
+    <string name="layout_informacion_induccion_pais_receptor">País receptor</string>
+    <string name="item_tema_especifico_tiempo_sugerido">Tiempo sugerido</string>
+
+    <string name="layout_rango_fechas_titulo">Rango de fechas</string>
+
+    <string name="layout_rango_fechas_de">Del</string>
+
+    <string name="layout_rango_fechas_al">Al</string>
+    <string name="layout_autorizacion_titulo">Autorización</string>
+    <string name="layout_fecha_numero_solicitud_fecha">Fecha de solicitud</string>
+
+    <string name="layout_fecha_numero_solicitud_numero">No. de solicitud</string>
+
+    <string name="activity_detalle_celula_entrenamiento_numero_empleado_2">Número de empleado: %1$s</string>
+    <string name="activity_detalle_celula_entrenamiento_area_funcional">Área funcional: %1$s</string>
+
+    <string name="activity_detalle_celula_entrenamiento_subarea_proceso">Sub Área/Proceso</string>
+    <string name="activity_detalle_celula_entrenamiento_rechazar_aceptar">Rechazar/Aceptar</string>
+    <string name="activity_detalle_celula_entrenamiento_tema_especifico">Tema Específico</string>
+    <string name="activity_detalle_celula_entrenamiento_subtemas_especificos">Subtemas específicos</string>
+    <string name="activity_detalle_celula_entrenamiento_facilitador">Facilitador</string>
+    <string name="activity_detalle_celula_entrenamiento_enviar">Enviar</string>
+    <string name="activity_detalle_celula_entrenamiento_contactanos">¡Contáctanos!</string>
+    <string name="activity_detalle_celula_entrenamiento_contactanos_descripcion">Para
+    cualquier aclaración contacta al administrador</string>
+    <string name="activity_detalle_celula_entrenamiento_facilitador_texto_inicial">Te han propuesto como facilitador,
+        por favor indica\nlos horarios en que puedas impartir la sesión.</string>
+    <string name="activity_contactar_administrador_toolbar_text">Contacto</string>
+    <string name="activity_contactar_administrador_titulo">¡Contáctanos!</string>
+
+    <string name="activity_contactar_administrador_descripcion">Para cualquier aclaración contacta\nal Administrador</string>
+    <string name="activity_contactar_administrador_a_quien_corresponda">A quien corresponda</string>
+    <string name="activity_contactar_administrador_para">Para:</string>
+    <string name="activity_contactar_administrador_de">De:</string>
+    <string name="activity_contactar_administrador_correo_electronico">Correo electrónico</string>
+    <string name="activity_contactar_administrador_mensaje">Mensaje</string>
+    <string name="activity_contactar_administrador_enviar">Enviar</string>
+    <string name="activity_por_programar_facilitador_confirmar_horario">Confirmar Horario</string>
+    <string name="activity_por_programar_facilitador_descripcion">Para cualquier aclaración contacta al administrador</string>
+
+    <string name="activity_por_programar_facilitador_no_disponible"><u>No estoy disponible</u></string>
+    <string name="activity_por_programar_facilitador_no_responsable"><u>No soy el responsable</u></string>
+    <string name="fragment_mensaje_enviado_dialog_titulo">¡Gracias!</string>
+    <string name="fragment_mensaje_enviado_dialog_contenido">Tu mensaje se ha\n enviado correctamente.</string>
+
+    <string name="fragment_mensaje_enviado_dialog_aceptar">Aceptar</string>
+    <string name="jefe_directo_item_titulo">Jefe Directo</string>
+    <string name="jefe_directo_item_colaborador">Colaborador</string>
+
+    <string name="facilitador_item_titulo">Facilitador</string>
+    <string name="facilitador_item_tema_especifico">Tema Específico</string>
+
+    <string name="administrador_pais_item_solicitante">Administrador del País Solicitante</string>
+    <string name="adninistrador_pais_item_receptor">Administrador del País Receptor</string>
+
+    <string name="activity_no_disponible_toolbar">No estoy disponible</string>
+    <string name="activity_no_disponible_descripcion_texto">Si no estás disponible para las fechas
+    en que se\n llevará a cabo la inducción, puedes asignar a\nalguien de tu equipo de trabajo</string>
+
+    <string name="activity_no_disponible_correo_texto">Correo de la persona asignada</string>
+    <string name="activity_no_disponinle_correo_extension">\@kof.com.mx</string>
+    <string name="activity_no_disponible_check_texto">No se encuentra ninguna persona\ndisponible en
+    el equipo.</string>
+    <string name="activity_no_disponible_aceptar">Aceptar</string>
+    <string name="activity_no_responsable_toolbar">No soy el responsable</string>
+    <string name="activity_no_responsable_titulo_texto">Una disculpa por los\ninconvenientes</string>
+
+    <string name="activity_no_responsable_descripcion_texto">Podrías ayudarnos indicando quien es
+    la\npersona responsable en estos temas, por favor.</string>
+    <string name="activity_no_responsable_nombre_facilitador">Nombre del facilitador</string>
+    <string name="activity_no_responsable_check_texto">No conozco quien es la persona\nresponsable
+    de los temas.</string>
+    <string name="activity_no_responsable_enviar">Enviar</string>
+    <string name="fragment_rechazar_dialog_boton">Aceptar</string>
+
+    <string name="fragment_no_responsable_dialog_descripcion">Has sido removido\nsatisfactoriamente
+    de esta solicitud.</string>
+    <string name="activity_confirmar_horario_toolbar">Confirmar Horario</string>
+    <string name="activity_confirmar_horario_descripcion">Selecciona el día en que deseas impartir
+    tu\ntema dentro del periodo seleccionado</string>
+
+    <string name="activity_confirmar_horario_horario_text">Horario</string>
+    <string name="activity_confirmar_horario_boton">Confirmar</string>
+    <string name="activity_detalle_ranking_top_10">Top 10</string>
+
+    <string name="activity_detalle_ranking_toolbar_title">Mi Ranking</string>
+
+    <!-- MI RANKING **************************************************************************** -->
+    <string name="estimated_time">Tiempo estimado:</string>
+    <string name="estimated_time_data">Tiempo estimado: %s</string>
+    <string name="unexpected_error">Ocurrió un error inesperado. (%1$s)</string>
+    <string name="expired_token">"La sesión ha expirado. "</string>
+    <string name="email">Correo electrónico</string>
+    <string name="invalid_mail">El correo ingresado no es válido, favor de verificar.</string>
+    <string name="successful_password_recovery">Se ha enviado la información para restablecer tu contraseña a tu dirección de correo electrónico.</string>
+    <string name="activity_mi_actividad_toolbar_text">Mi Actividad</string>
+    <string name="activity_mi_actividad_mis_puntos">Mis Puntos</string>
+
+    <!-- MI ACTIVIDAD ************************************************************************** -->
+    <string name="activity_mi_actividad_programas_activos">Programas\nActivos</string>
+    <string name="activity_mi_actividad_programas_terminados">Programas\nTerminados</string>
+    <string name="activity_mi_actividad_primer_cuadro">Mentalidad\nde dueño</string>
+    <string name="activity_mi_actividad_segundo_cuadro">Foco obsesivo en\nconsumidor y cliente</string>
+    <string name="activity_mi_actividad_tercer_cuadro">Excelencia\noperativa</string>
+    <string name="activity_mi_actividad_cuarto_cuadro">Decisores\nágiles</string>
+    <string name="activity_mi_actividad_quinto_cuadro">Primero\nla gente</string>
+    <string name="activity_mi_actividad_programas">\t\tProgramas\t\t</string>
+    <string name="activity_mi_actividad_logros">\t\t\tLogros\t\t\t</string>
+    <string name="activity_mi_actividad_de">de</string>
+    <string name="fragment_mi_actividad_programas_activos">Activos</string>
+    <string name="fragment_mi_actividad_programas_historial">Historial</string>
+
+    <string name="fragment_mi_actividad_sin_programas_activos">Aún no tienes programas activos</string>
+    <string name="fragment_mi_actividad_sin_programas_descargados">Aún no tienes objetos descargados</string>
+    <string name="fragment_mi_actividad_sin_programas_historial">Aún no tienes programas terminados</string>
+    <string name="fragment_mi_actividad_logros_mis_logros">Mis Logros</string>
+    <string name="programas_layout_tus_puntos_ganados">Tus puntos ganados</string>
+
+    <string name="videoInteractivo">Video Interactivo</string>
+
+    <string name="hard_text">A mí en mi tiempo libre me encanta estar con el móvil pero juego al fútbol con mis amigos, pero también me gusta escuchar música pero miro una red social, instagram.  Me gusta comer patatas fritas pero lo único que me importa es estar con mi hermana porque me lo paso muy bien con ella.  Me gusta pasarlo bien con mis amigos pero a la vez me quedo en casa porque si no me aburro y mucho además mientras juego al billar, comiéndome unas hamburguesas muy deliciosas y muy ricas; además estaban las mandarinas.</string>
+    <string name="tiempo_interactive_video">Tiempo estimado: %1$d min</string>
+    <string name="programas_layout_avance">Avance</string>
+    <string name="logros_layout_alcanzado">Alcanzado:</string>
+    <string name="exit">Salir de la aplicación</string>
+
+    <string name="close_app">¿Está seguro que desea salir de la aplicación?</string>
+    <string name="no_content">No se encontraron coincidencias.</string>
+    <string name="vigencia">Vigencia:</string>
+    <string name="drawer_title_notificaciones">Notificaciones</string>
+    <string name="delete">Eliminar</string>
+    <string name="close_session_dialog">¿Está seguro que desea cerrar sesión?</string>
+    <string name="nuevaCelula">¡Crea una Solicitud!</string>
+    <string name="induccion_label">Inducción</string>
+    <string name="Celulas_label">Células de Entrenamiento</string>
+
+    <string name="Celulas_label_singular">Célula de Entrenamiento</string>
+    <string name="pass_req_06">Los números y letras no pueden ser consecutivos</string>
+    <string name="image_actualizada">Imagen actualizada exitosamente.</string>
+
+    <string name="sinNotificaciones">No tienes notificaciones.</string>
+    <string name="title_celulas">Células</string>
+    <string name="fecha_solicitud">Fecha de solicitud</string>
+    <string name="Title_celulas">Registra a los participantes del proceso de %s</string>
+    <string name="label_Solicitante_text">Datos del Solicitante</string>
+
+    <string name="numero_empleado">1643745</string>
+    <string name="fecha_solicitud_date">26/Dic/2018</string>
+    <string name="participacion">¿Serás participante en esta \n %s?</string>
+    <string name="si"> Sí </string>
+    <string name="no"> No </string>
+    <string name="evaluacion">Evaluación</string>
+    <string name="finalizar">Finalizar</string>
+
+    <string name="usuario_ya_registrado">Usuario ya registrado.</string>
+    <string name="siguiente">Siguiente</string>
+
+    <string name="label_numero_empleado">Número de empleado</string>
+    <string name="fecha_ejemplo">26/Dic/2018</string>
+    <string name="checklist">Checklist</string>
+    <string name="nombreEmpleado">Martha Carolina Zerlin</string>
+
+    <string name="numero_empleado_cardview">Número de empleado: %d</string>
+
+    <string name="puesto">Ejecutivo Desarrollo Organizacional</string>
+    <string name="areafuncional">Área funcional: %s</string>
+    <string name="area_proceso">Sub Área / Proceso</string>
+    <string name="area_cardview">Investigación comercial</string>
+    <string name="numero_jefe">No. de Empleado de Jefe Directo</string>
+    <string name="numero_jefe_ejemplo">765489</string>
+    <string name="label_name_jefe">Nombre del Jefe Directo</string>
+    <string name="nombre_jefe">Antonio Sánchez Mujica</string>
+    <string name="label_posicion">Posición</string>
+    <string name="posicion_example">Ejecutivo Knowledge Manage</string>
+    <string name="label_correo">Correo</string>
+    <string name="correo_example">martha.arrellano@kof.com</string>
+    <string name="label_informacion_celula">Información de %s</string>
+    <string name="label_tema_especifico">Tema general</string>
+    <string name="pais_solicitante">País solicitante</string>
+    <string name="corporativo">Corporativo</string>
+    <string name="pais_receptor">País receptor</string>
+    <string name="tema_especifico">Tema específico</string>
+    <string name="ejemplo_tema_especifico">Política Comercial</string>
+    <string name="sin_contenido">Aún sin contenido</string>
+
+    <string name="subtemas_especificos">Subtemas específicos</string>
+    <string name="sub_area_proceso">Sub Área/Proceso</string>
+    <string name="facilitador_label">Facilitador</string>
+    <string name="anadir_puesto">Añadir puesto</string>
+    <string name="label_tiempo_sugerido">Tiempo sugerido</string>
+    <string name="label_horas">H</string>
+    <string name="consulta_vacia">No tenemos contenido para esta consulta.</string>
+    <string name="usuario_inexistente">Usuario inexistente.</string>
+    <string name="dialog_prueba_terminada">Ha terminado la prueba.</string>
+    <string name="femsa">KOF</string>
+    <string name="title_facilitador">Facilitador</string>
+    <string name="example_comercial">Comercial</string>
+    <string name="label_seleccionar_area">Selecciona el área funcional y coloca una \n palabra clave en el buscador.</string>
+    <string name="ejemplo_palabra">Ejecutivo</string>
+    <string name="video_error">Ocurrió un error en la reproducción del video.</string>
+    <string name="kof_inscripcion">Inscríbete</string>
+    <string name="actualiza_mail">Actualiza tu correo</string>
+    <string name="actualiza_correo_detalle">Escribe tu nuevo correo electrónico.</string>
+    <string name="correo_actualizado">Correo electrónico actualizado exitosamente.</string>
+    <string name="inscripcion_detalle_dialogo">Deseas inscribirte al programa</string>
+    <string name="title_rango_fechas">Rango de fechas</string>
+    <string name="siguiente_video">Cargando siguiente video.</string>
+    <string name="Celula">Célula</string>
+    <string name="Induccion">Inducción</string>
+    <string name="label_rango_fechas">El total de horas que requieres \npara tu %s \nson:</string>
+    <string name="horas_total">%.1f H</string>
+
+    <string name="label_rango_dias">Te recomendamos elegir un rango\nde fecha de:</string>
+    <string name="dias_totales">%s días</string>
+    <string name="dias_totales_1">%s día</string>
+    <string name="aun_sin_programas">Aún sin programas</string>
+    <string name="configuracion">Ver Configuración</string>
+    <string name="nden">de</string>
+    <string name="idioma">Idioma</string>
+    <string name="descarga_contenido">Descargar contenido</string>
+    <string name="solowifi">Descargar solo con WiFi</string>
+    <string name="video_interactivo_exito_titulo">¡Lo hiciste muy bien!</string>
+    <string name="video_interactivo_fail_titulo">Vuelve a intentarlo</string>
+    <string name="video_interactivo_exito_descripcion">Tu aprendizaje ha sido satisfactorio</string>
+    <string name="video_interactivo_fail_descripcion">No obtuviste el puntaje necesario, no te des por vencido</string>
+    <string name="label_fecha_fin">Al</string>
+    <string name="label_fecha_inicio">Del</string>
+    <string name="indicador_cardview">1</string>
+    <string name="separador_cardview">/</string>
+    <string name="total_cardview">20</string>
+    <string name="activity_mis_recompensas_toolbar_title">Mis Recompensas</string>
+    <string name="activity_mis_recompensas_text_tus_puntos">Tus Puntos</string>
+
+    <!-- MIS RECOMPENSAS *********************************************************************** -->
+    <string name="activity_mis_recompensas_text_canjear">Canjear</string>
+    <string name="activity_mis_recompensas_text_historial">Historial</string>
+    <string name="activity_detalle_recompensa_toolbar_title">Recompensas</string>
+    <string name="activity_detalle_recompensa_text_descripcion">Descripción</string>
+
+    <string name="activity_detalle_recompensa_vigencia">Vigencia: %1$s</string>
+    <string name="activity_detalle_recompensa_text_terminos_condiciones">Términos y condiciones</string>
+    <string name="activity_detalle_recompensa_text_solicitar">Solicitar</string>
+    <string name="fragment_mis_recompensas_canjear_mensaje">Aún sin recompensas para canjear.</string>
+    <string name="fragment_mis_recompensas_historial_mensaje">Aún sin recompensas canjeadas.</string>
+
+    <string name="fragment_mis_recompensas_dialog_success_title">¡Felicidades!</string>
+
+    <string name="fragment_mis_recompensas_dialog_success_descripcion">Esta recompensa se te ha asignado,
+        contacta a RH.</string>
+
+    <string name="fragment_mis_recompensas_dialog_button">Aceptar</string>
+    <string name="encuesta_toolbar_title">Encuesta</string>
+    <string name="activity_enlace_toolbar_title">Enlace</string>
+
+    <!-- OBJETOS DE APRENDIZAJE **************************************************************** -->
+    <string name="activity_enlace_text_tiempo_estimado">Tiempo estimado: %1$s</string>
+
+    <string name="mensaje">Mensaje</string>
+    <string name="ok">Aceptar</string>
+
+    <!-- *************************************************************************************** -->
+    <string name="marcar_completado">Marcar como completado</string>
+    <string name="completado">Completado</string>
+    <string name="recibir_notificaciones">Recibir notificaciones</string>
+    <string name="habilitar_notificaciones">Habilitar notificaciones</string>
+    <string name="deep_link_detalle">My KOF Learning</string>
+    <string name="confirmacion_induccion">Confirmación de Inducción</string>
+    <string name="confirmar_celula">Verifica y Confirma toda la información ingresada en %s.</string>
+    <string name="hrs">%1$s H</string>
+    <string name="mensaje_chido">%s ( ͡° ͜ʖ ͡°)( ͠° ͟ʖ ͡°)( ͡~ ͜ʖ ͡°)</string>
+    <string name="porqueviste">Porque viste</string>
+    <string name="lomasvisto">Lo más visto</string>
+    <string name="sin_facilitador">No hay facilitadores disponibles para esa selección.</string>
+    <string name="sinws">Aún no hay Web Service   (╯ ͠° ͟ʖ ͡°)╯┻━┻</string>
+    <string name="selecciona_facilitador">Selecciona un facilitador</string>
+    <string name="minimo_facilitadores">Debe haber al menos un participante.</string>
+    <string name="participante_ya_agregado">Este participante ya está agregado</string>
+    <string name="agregar_tema">Debes agregar un tema.</string>
+    <string name="tema_especifico_sin_titulo">Agrega un título al tema específico.</string>
+    <string name="agregar_tema_especifico_vacio">Agrega al menos un tema especifico</string>
+    <string name="Corporativo">Corporativo</string>
+    <string name="Mexico">México</string>
+    <string name="Colombia">Colombia</string>
+    <string name="Brasil">Brasil</string>
+    <string name="Argentina">Argentina</string>
+    <string name="Guatemala">Guatemala</string>
+    <string name="Uruguay">Uruguay</string>
+    <string name="Venezuela">Venezuela</string>
+    <string name="Nicaragua">Nicaragua</string>
+    <string name="Costa_Rica">Costa Rica</string>
+    <string name="Panama">Panamá</string>
+    <string name="OtrosPaises">Otros países</string>
+    <string name="otrotema">Agregar otro Tema Específico</string>
+    <string name="solicitud_exitosa">Tu solicitud se ha enviado con éxito.</string>
+    <string name="word">Word</string>
+    <string name="excek">Excel</string>
+    <string name="powerpoint">Power Point</string>
+    <string name="videoconferencia">Conferencia</string>
+    <string name="charla_con_experto">Asesoría con el experto</string>
+    <string name="juegos">Juegos</string>
+    <string name="texto_informacion_microsoft">Para poder visualizar este documento deberas tener instalado un visor de archivos %s</string>
+    <string name="eliminar_celula">¿Desea eliminar esta solicitud?</string>
+    <string name="inicio_videoConferencia">Inicia: %s  %s H</string>
+    <string name="gracias">¡Gracias!</string>
+    <string name="informacion_aceptada">Tu información fue recibida.</string>
+    <string name="de">Pregunta %d de %d</string>
+    <string name="aprobo_evaluacion">Obtuviste %1$s%%\nAprobaste tu evaluación.</string>
+    <string name="reprobo_evaluacion">Obtuviste %1$s%%, vuelve a repasar los temas e inténtalo de nuevo.</string>
+    <string name="felicitaciones">¡Felicitaciones!</string>
+    <string name="falto_poco">¡UPS, te ha faltado poco!</string>
+    <string name="agregar_participante">Agregar participante</string>
+    <string name="campos_necesarios">No has llenado todos los campos necesarios.</string>
+    <string name="usuario_inexistente_empleado">Número de empleado inexistente.</string>
+    <string name="minima_areas">Selecciona al menos un área funcional</string>
+    <string name="sin_fecha">No se han seleccionado las fechas.</string>
+    <string name="participante_ya_agregado_faciltador">Esta persona ya fue agregada como facilitador.</string>
+    <string name="horario_cumfirmado">Has asignado tu horario satisfactoriamente.</string>
+    <string name="minimo_opciones">Selecciona al menos una opción.</string>
+    <string name="max_campos">Se seleccionó más de un campo.</string>
+    <string name="min_campos">Por favor, selecciona al menos un campo.</string>
+    <string name="no_se_encotnro_mail">No se encontró el correo ingresado.</string>
+
+    <string name="fragment_no_disponible_dialog_success">¡Gracias por tu apoyo!</string>
+    <string name="minimo_opciones_horario">Es necesario seleccionar un horario.</string>
+    <string name="agrega_pais_receptor">Por favor selecciona un país receptor.</string>
+    <string name="corcholatas_insuficientes">Lo sentimos, aún no cuentas con los puntos suficientes para canejar esta recompensa</string>
+    <string name="horario_inicio">Horario inicio</string>
+    <string name="horario_fin">Horario fin</string>
+
+    <string name="seleccionar_charla_experto">Seleccionar</string>
+    <string name="hora_inicio_charla">%s</string>
+    <string name="incanjeable">Ya se ha solicitado esta recompensa.</string>
+    <string name="charla_reservada">Has reservado tutoría el día %s de %s a %s</string>
+    <string name="video_conferencia">Video Conferencia</string>
+    <string name="fecha_solicitada">Fecha solicitada</string>
+    <string name="total_respuestas_encoesta">Aún faltan respuestas por contestar, favor de verificar</string>
+    <string name="tema_general">Tema General: %s</string>
+    <string name="tema_especifico_2temaEspecifico">Tema Especifico: %s</string>
+    <string name="recompensa_agotada">Lo sentimos se ha agotado esta recompensa</string>
+    <string name="sin_horarios_vedeocharla">Lo sentimos, se han agotado los horarios para esta asesoría.</string>
+    <string name="descargando_juego">Descargando el juego…</string>
+    <string name="espera">Por favor espere un momento</string>
+    <string name="comic">Cómic</string>
+    <string name="enlace">Enlace</string>
+    <string name="indeterminado">Indeterminado</string>
+
+    <string-array name="short_months">
+        <item>Ene</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Abr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Ago</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dic</item>
+    </string-array>
+    <string-array name="diasSemana">
+        <item>Lu</item>
+        <item>Ma</item>
+        <item>Mi</item>
+        <item>Ju</item>
+        <item>Vi</item>
+        <item>Sá</item>
+        <item>Do</item>
+    </string-array>
+    <string name="facilitador_no_encontrado">No se ha encontrado el facilitador.</string>
+    <string name="fecha_inapartable">El horario seleccionado ya no está disponible. Por favor selecciona otro.</string>
+    <string name="permanente">Permanente</string>
+    <string name="snfechas_definidas">Esta conferencia no ha sido programada.</string>
+    <string name="sinfechas_definidas_charla">Esta charla con experto no ha sido programada.</string>
+    <string name="documento_word">Word</string>
+    <string name="elegir_rival">Elegir Rival</string>
+    <string name="buscar">Buscar</string>
+    <string name="usuarios">Usuarios</string>
+    <string name="descargas">Descargas</string>
+    <string name="descarga_exitosa">Se ha descargado con éxito.</string>
+    <string name="descarga_fallida">En este momento el servicio no está disponible, favor de intentarlo más tarde.</string>
+    <string name="reto">¿Deseas retar a %s en este juego?</string>
+    <string name="reto_titulo">Reto</string>
+    <string name="juego_multijugador">Juego Multijugador</string>
+    <string name="es_tu_turno">Es tu turno</string>
+    <string name="esperando_a_tu_rival">Esperando a tu rival</string>
+    <string name="sin_retadores">No hay jugadores disponibles</string>
+    <string name="te_ha_retado">%s te ha retado a jugar Gusanos y Escaleras, ¿Aceptas el reto?</string>
+    <string name="reto_aceptado">Has aceptado el reto, en espera de tiro.</string>
+    <string name="reto_enviado">En espera de tu contrincante.</string>
+    <string name="fecha_placeholder">dd/mmmm/aaaa</string>
+    <string name="tiempo_estimado">Tiempo estimado:</string>
+    <string name="destinatario">Para mí</string>
+    <string name="tu_posicion">Tu posición</string>
+    <string name="video_interactivo">Video Interactivo</string>
+    <string name="retar_label">Retar</string>
+    <string name="adn_kof">ADN KOF</string>
+    <string name="descarga_bloqueada">Tu configuración solo permite descargas mediante WiFi, desactiva tus datos móviles y conéctate a una red WiFi.</string>
+    <string name="compartir">Compartir mediante:</string>
+    <string name="correo_ambiguo">Se enviará un enlace de recuperación al correo asociado a tu cuenta. En caso de no recibirlo, favor de validar con tu contacto de RH correspondiente.</string>
+    <string name="usuario_inexistente_seguro">El número de empleado no está disponible, favor de validarlo con tu contacto de RH correspondiente.</string>
+    <string name="error">Hubo problemas al cargar el video. Error de certificado.</string>
+</resources>

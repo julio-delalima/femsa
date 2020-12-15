@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TOOLBAR ******************************************************************************* -->
+    <dimen name="tv_activity_detalle_celula_entrenamiento_toolbar_title_text_size">19sp</dimen>
+
+    <!-- FECHA DE SOLICITUD ******************************************************************** -->
+    <dimen name="tv_fecha_solicitud_text_size">14sp</dimen>
+    <dimen name="tv_activity_detalle_celula_entrenamiento_fecha_solicitud_text_size">19sp</dimen>
+
+    <!-- NO. DE SOLICITUD ********************************************************************** -->
+    <dimen name="tv_no_solicitud_text_size">14sp</dimen>
+    <dimen name="tv_activity_detalle_celula_entrenamiento_no_solicitud_text_size">19sp</dimen>
+
+    <!-- DATOS SOLICITANTE ********************************************************************* -->
+    <dimen name="tv_layout_datos_solicitante_text_size">19sp</dimen>
+    <dimen name="tv_layout_datos_solicitante_titulo_text_size">14sp</dimen>
+    <dimen name="tv_layout_datos_solicitante_informacion_text_size">17sp</dimen>
+
+    <!-- PARTICIPANTES ************************************************************************* -->
+    <dimen name="tv_participantes_text_size">19sp</dimen>
+    <dimen name="iv_editar_participantes_width_height">25dp</dimen>
+
+    <!-- AUTORIZACIÓN ************************************************************************** -->
+    <dimen name="tv_autorizacion_text_size">19sp</dimen>
+
+    <!-- INFORMACIÓN DE LA INDUCCIÓN *********************************************************** -->
+    <dimen name="tv_informacion_induccion_text_size">19sp</dimen>
+    <dimen name="tv_tema_general_text_size">14sp</dimen>
+    <dimen name="tv_activity_detalle_celula_entrenamiento_tema_general_text_size">16sp</dimen>
+
+    <!-- RANGO DE FECHAS *********************************************************************** -->
+    <dimen name="tv_rango_fechas_text_size">19sp</dimen>
+    <dimen name="tv_activity_detalle_celula_entrenamiento_rango_fechas_titulo_text_size">14sp</dimen>
+    <dimen name="tv_activity_detalle_celula_entrenamiento_rango_fechas_informacion_text_size">15sp</dimen>
+
+    <!-- INFORMACIÓN FINAL ********************************************************************* -->
+    <dimen name="btn_activity_detalle_celula_entrenamiento_enviar_text_size">20sp</dimen>
+    <dimen name="tv_contactanos_text_size">18sp</dimen>
+    <dimen name="tv_contactanos_descripcion_text_size">16sp</dimen>
+
+    <!-- activity_crear_celula_dos.xml ********************************************************* -->
+    <dimen name="civ_add_empleado_width_height">31dp</dimen>
+
+</resources>

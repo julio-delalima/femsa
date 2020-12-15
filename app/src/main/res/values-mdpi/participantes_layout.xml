@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="civ_participantes_layout_foto_perfil_width_height">40dp</dimen>
+    <dimen name="iv_participantes_layout_flag_width_height">20dp</dimen>
+    <dimen name="tv_participantes_layout_nombre_text_size">17sp</dimen>
+    <dimen name="tv_participantes_layout_contenido">13sp</dimen>
+    <dimen name="tv_participantes_layout_titulo">14sp</dimen>
+    <dimen name="switch_participantes_layout_aceptar_rechazar_width">50dp</dimen>
+    <dimen name="switch_participantes_layout_aceptar_rechazar_height">25dp</dimen>
+</resources>

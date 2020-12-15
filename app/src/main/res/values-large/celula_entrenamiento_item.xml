@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tv_celula_entrenamiento_item_titulo_text_size">23sp</dimen>
+    <dimen name="tv_celula_entrenamiento_estado_text_size">18sp</dimen>
+    <dimen name="tv_celula_entrenamiento_autorizador_text_size">18sp</dimen>
+    <dimen name="tv_celula_entrenamiento_item_nombre_persona_text_size">22sp</dimen>
+    <dimen name="tv_celula_entrenamiento_item_descripcion_text_size">22sp</dimen>
+    <dimen name="civ_celula_entrenamiento_item_imagen_width">100dp</dimen>
+    <dimen name="civ_celula_entrenamiento_item_imagen_height">100dp</dimen>
+    <dimen name="iv_celula_entrenamiento_bandera_width">45dp</dimen>
+    <dimen name="iv_celula_entrenamiento_bandera_height">45dp</dimen>
+</resources>

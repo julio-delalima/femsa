@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tema_especifico_layout_tema_text_size">20sp</dimen>
+    <dimen name="tema_especifico_layout_titulo_text_size">20sp</dimen>
+    <dimen name="tema_especifico_layout_contenido_text_size">22sp</dimen>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_no_responsable_toolbar_text_size">26sp</dimen>
+
+    <dimen name="activity_no_responsable_titulo_text_size">27sp</dimen>
+
+    <dimen name="activity_no_responsable_descripcion_text_size">21sp</dimen>
+
+    <dimen name="activity_no_responsable_nombre_facilitador_text_size">20sp</dimen>
+
+    <dimen name="activity_no_responsable_edittext_text_size">22sp</dimen>
+
+    <dimen name="activity_no_responsable_button_text_size">24sp</dimen>
+</resources>

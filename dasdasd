@@ -1,0 +1,13 @@
+[1mdiff --git a/app/src/main/java/com/femsa/sferea/home/celulasDeEntrenamiento/detalle/porProgramar/facilitador/confirmarHorario/ConfirmarHorarioActivity.java b/app/src/main/java/com/femsa/sferea/home/celulasDeEntrenamiento/detalle/porProgramar/facilitador/confirmarHorario/ConfirmarHorarioActivity.java[m
+[1mindex df03d13..0ad3e60 100644[m
+[1m--- a/app/src/main/java/com/femsa/sferea/home/celulasDeEntrenamiento/detalle/porProgramar/facilitador/confirmarHorario/ConfirmarHorarioActivity.java[m
+[1m+++ b/app/src/main/java/com/femsa/sferea/home/celulasDeEntrenamiento/detalle/porProgramar/facilitador/confirmarHorario/ConfirmarHorarioActivity.java[m
+[36m@@ -95,7 +95,7 @@[m [mpublic class ConfirmarHorarioActivity extends AppCompatActivity implements View.[m
+         customizeCalendar();[m
+         initializeToolbar();[m
+         //Creando el intervalo de horas que se mostrarán en la línea de tiempo.[m
+[31m-        mListHorario = crearListaDeHoras(0, 23);[m
+[32m+[m[32m        mListHorario = crearListaDeHoras(6, 18);[m
+         initializeAdapters();[m
+         initializePresenter();[m
+ [m

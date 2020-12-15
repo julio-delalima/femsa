@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/femsa_white"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".home.celulasDeEntrenamiento.detalle.porProgramar.facilitador.delegarSolicitud.NoDisponibleActivity">
+
+    <!-- TOOLBAR ******************************************************************************* -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_activity_no_disponible"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:theme="?attr/actionBarTheme"
+        app:popupTheme="@style/AppTheme.AppBarOverlay"
+        android:background="@drawable/toolbar_layout"
+        app:navigationIcon="@drawable/ic_back_white_arrow"
+        android:elevation="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_no_disponible_toolbar"
+            android:textColor="@color/femsa_white"
+            android:textAlignment="center"
+            android:maxLines="1"
+            android:layout_gravity="center"
+            android:textSize="@dimen/activity_no_disponible_toolbar_text_size"
+            android:ellipsize="end"
+            android:gravity="center"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_activity_no_disponible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_activity_no_disponible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- MENSAJE SUPERIOR ********************************************************************** -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_mensaje"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="@string/activity_no_disponible_descripcion_texto"
+                    android:textAlignment="center"
+                    android:textColor="@color/femsa_black"
+                    android:textSize="@dimen/activity_no_disponible_descripcion_text_size"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- TEXTO "Correo de la persona asignada" ************************************************* -->
+            <TextView
+                android:id="@+id/tv_correo_persona_asignada"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/activity_no_disponible_correo_texto"
+                android:textAlignment="center"
+                android:textColor="@color/femsa_black"
+                android:textSize="@dimen/activity_no_disponible_titulo_text_size"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cv_mensaje" />
+
+            <!-- CORREO ELECTRÓNICO ******************************************************************** -->
+            <EditText
+                android:id="@+id/et_activity_no_disponible"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/femsa_red_b"
+                android:maxLines="1"
+                android:textSize="@dimen/activity_no_disponible_edittext_text_size"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890.-_"
+                android:inputType="textFilter"
+                app:layout_constraintEnd_toStartOf="@id/tv_correo_dominio"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_correo_persona_asignada" />
+
+            <TextView
+                android:id="@+id/tv_correo_dominio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="@string/activity_no_disponinle_correo_extension"
+                android:textColor="@color/femsa_black"
+                android:textSize="@dimen/activity_no_disponible_dominio_correo_text_size"
+                app:layout_constraintTop_toTopOf="@id/et_activity_no_disponible"
+                app:layout_constraintStart_toEndOf="@id/et_activity_no_disponible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/et_activity_no_disponible"/>
+
+            <!-- CHECKBOX "No se encuentra ninguna persona..." ***************************************** -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                app:layout_constraintTop_toBottomOf="@id/et_activity_no_disponible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <CheckBox
+                    android:id="@+id/cb_activity_no_disponible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:buttonTint="@color/femsa_red_b"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tv_mensaje"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_mensaje"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/activity_no_disponible_check_texto"
+                    android:textSize="@dimen/activity_no_disponible_checkbox_text_size"
+                    android:textColor="@color/femsa_black"
+                    android:textAlignment="viewStart"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- BOTÓN "Aceptar" *********************************************************************** -->
+    <Button
+        android:id="@+id/btn_activity_no_disponible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:text="@string/activity_no_disponible_aceptar"
+        android:textColor="@color/femsa_red_b"
+        android:textAllCaps="false"
+        android:textSize="@dimen/activity_no_disponible_boton_text_size"
+        android:background="@drawable/celulas_entrenamiento_button_background"
+        android:minHeight="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.celulasDeEntrenamiento.listado.viewPager.CelulasDeEntrenamientoUnoFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/frameLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/celulas_entrenamiento_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:background="@color/femsa_black"
+                android:layout_width="match_parent"
+                android:alpha="0.4"
+                android:layout_height="match_parent"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_celulas_entrenamiento_fragment_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/fragment_celulas_de_entrenamiento_uno_titulo"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/tv_celulas_entrenamiento_fragment_titulo_text_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tv_celulas_entrenamiento_fragment_descripcion"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_celulas_entrenamiento_fragment_descripcion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="96dp"
+            android:text="@string/fragment_celulas_de_entrenamiento_uno_descripcion"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/tv_celulas_entrenamiento_fragment_descripcion_text_size"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/frameLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

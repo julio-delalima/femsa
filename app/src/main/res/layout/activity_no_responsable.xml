@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/femsa_white"
+    android:focusableInTouchMode="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_activity_no_responsable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:theme="?attr/actionBarTheme"
+            android:background="@drawable/toolbar_layout"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:navigationIcon="@drawable/ic_back_white_arrow"
+            android:elevation="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_no_responsable_toolbar"
+                android:textColor="@color/femsa_white"
+                android:maxLines="1"
+                android:layout_gravity="center"
+                android:textSize="@dimen/activity_no_responsable_toolbar_text_size"
+                android:ellipsize="end"
+                android:textAlignment="center"
+                android:gravity="center_vertical" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintTop_toBottomOf="@id/toolbar_activity_no_responsable"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- UNA DISCULPA POR LOS INCONVENIENTES *************************************************** -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_disculpa_inconvenientes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:id="@+id/tv_disculpa_inconvenientes_titulo"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="@string/activity_no_responsable_titulo_texto"
+                            android:textColor="@color/femsa_black"
+                            android:textSize="@dimen/activity_no_responsable_titulo_text_size"
+                            android:textAlignment="center"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent" />
+
+                        <View
+                            android:id="@+id/view_disculpa_incovenientes_descripcion"
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginStart="64dp"
+                            android:layout_marginEnd="64dp"
+                            android:background="@color/femsa_red_b"
+                            app:layout_constraintTop_toBottomOf="@id/tv_disculpa_inconvenientes_titulo"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="16dp"
+                            android:text="@string/activity_no_responsable_descripcion_texto"
+                            android:textColor="@color/femsa_black"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/activity_no_responsable_descripcion_text_size"
+                            app:layout_constraintTop_toBottomOf="@id/view_disculpa_incovenientes_descripcion"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- NOMBRE DEL FACILITADOR **************************************************************** -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_nombre_facilitador"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    app:layout_constraintTop_toBottomOf="@id/cv_disculpa_inconvenientes"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_nombre_facilitador_titulo"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginEnd="16dp"
+                            android:text="@string/activity_no_responsable_nombre_facilitador"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/femsa_black"
+                            android:textSize="@dimen/activity_no_responsable_nombre_facilitador_text_size"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+                        <EditText
+                            android:id="@+id/et_activity_no_responsable"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textSize="@dimen/activity_no_responsable_edittext_text_size"
+                            android:backgroundTint="@color/femsa_red_b"
+                            app:layout_constraintTop_toBottomOf="@id/tv_nombre_facilitador_titulo"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"/>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- NO CONOZCO QUIEN ES LA PERSONA RESPONSABLE ******************************************** -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_no_conozco_responsable"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="8dp"
+                    app:layout_constraintTop_toBottomOf="@id/cv_nombre_facilitador"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <CheckBox
+                            android:id="@+id/cb_activity_no_responsable"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:buttonTint="@color/femsa_red_b"
+                            android:gravity="end"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/tv_mensaje"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tv_mensaje"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginBottom="24dp"
+                            android:layout_marginStart="16dp"
+                            android:text="@string/activity_no_responsable_check_texto"
+                            android:textAlignment="viewStart"
+                            android:textSize="@dimen/activity_no_responsable_descripcion_text_size"
+                            android:textColor="@color/femsa_black"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- BOTÓN "Enviar" ************************************************************************ -->
+                <Button
+                    android:id="@+id/btn_activity_no_responsable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:paddingEnd="48dp"
+                    android:paddingStart="48dp"
+                    android:text="@string/activity_no_responsable_enviar"
+                    android:textColor="@color/femsa_red_b"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/activity_no_responsable_button_text_size"
+                    android:background="@drawable/celulas_entrenamiento_button_background"
+                    android:minHeight="32dp"
+                    android:elevation="8dp"
+                    app:layout_constraintTop_toBottomOf="@id/cv_no_conozco_responsable"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

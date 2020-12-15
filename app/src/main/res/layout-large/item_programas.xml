@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/iv_programas_layout_imagen"
+                android:layout_width="200dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="@dimen/iv_programas_layout_imagen_margin_top_bottom"
+                android:layout_marginBottom="@dimen/iv_programas_layout_imagen_margin_top_bottom"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/images_calidad"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="@string/iv_programas_layout_imagen_dimension_ratio"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:riv_corner_radius="10dp" />
+
+            <View
+                android:id="@+id/view_programas_item_separador_1"
+                android:layout_width="2dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="@dimen/view_programas_item_separador_1_margin_top_bottom"
+                android:layout_marginBottom="@dimen/view_programas_item_separador_1_margin_top_bottom"
+                android:background="@color/mi_actividad_general_color_red"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iv_programas_layout_imagen"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_programas_layout_nombre"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="holisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholisholis"
+                android:textColor="@color/mi_actividad_general_text_black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view_programas_item_separador_1"
+                app:layout_constraintTop_toTopOf="@+id/view_programas_item_separador_1" />
+
+            <!-- TUS PUNTOS GANADOS ************************************************************ -->
+            <TextView
+                android:id="@+id/tv_puntos_ganados"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/programas_layout_tus_puntos_ganados"
+                android:textAlignment="textStart"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@id/gl_programas_layout_2"
+                app:layout_constraintStart_toStartOf="@+id/tv_programas_layout_nombre"
+                app:layout_constraintTop_toBottomOf="@+id/tv_programas_layout_nombre" />
+
+            <ImageView
+                android:id="@+id/iv_activity_mi_actividad_corcholata"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@mipmap/ic_corcholata"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view_programas_item_separador_1"
+                app:layout_constraintTop_toBottomOf="@id/tv_puntos_ganados" />
+
+            <TextView
+                android:id="@+id/tv_programas_layout_puntos_ganados"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="99999/100000"
+                android:textColor="@color/mi_actividad_general_text_black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/iv_activity_mi_actividad_corcholata"
+                app:layout_constraintEnd_toStartOf="@+id/gl_programas_layout_2"
+                app:layout_constraintStart_toEndOf="@id/iv_activity_mi_actividad_corcholata"
+                app:layout_constraintTop_toTopOf="@id/iv_activity_mi_actividad_corcholata" />
+
+            <!-- AVANCE ************************************************************************ -->
+            <TextView
+                android:id="@+id/tv_avance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:text="@string/programas_layout_avance"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/gl_programas_layout_2"
+                app:layout_constraintTop_toTopOf="@+id/tv_puntos_ganados" />
+
+            <TextView
+                android:id="@+id/tv_programas_layout_porcentaje"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="25%"
+                android:textColor="@color/mi_actividad_general_text_black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@id/gl_programas_layout_2"
+                app:layout_constraintTop_toBottomOf="@id/tv_avance" />
+
+            <ProgressBar
+                android:id="@+id/pb_programas_item_progreso"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/pb_programas_item_progreso_height"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="50"
+                android:progressDrawable="@drawable/programas_item_progress_bar_style"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/gl_programas_layout_2"
+                app:layout_constraintTop_toBottomOf="@+id/tv_programas_layout_porcentaje" />
+
+            <!-- GUIDELINES ******************************************************************** -->
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gl_programas_layout_1"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.4" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gl_programas_layout_2"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.75" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.55" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

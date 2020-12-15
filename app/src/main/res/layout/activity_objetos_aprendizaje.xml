@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/objeto_aprendizaje_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/femsa_white">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/objeto_aprendizaje_constraint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/boton_multiplayer_cv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone"
+                app:cardCornerRadius="20dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false"
+                app:layout_constraintBottom_toBottomOf="@+id/objeto_aprendizaje_preview"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/estatus_multiplayer_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginEnd="16dp"
+                        android:text="@string/retar_label"
+                        android:textColor="@color/femsa_black"
+                        android:textSize="@dimen/text_very_big_size"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/circleImageView"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/circleImageView2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end|center"
+                        android:adjustViewBounds="false"
+                        android:scaleType="centerCrop"
+                        android:src="@color/femsa_white"
+                        app:civ_border_color="@color/femsa_gray_a"
+                        app:civ_border_width="1dp"
+                        app:civ_circle_background_color="@color/femsa_black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/circleImageView"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|center"
+                        android:adjustViewBounds="true"
+                        android:cropToPadding="false"
+                        android:padding="1dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/ic_red_right_arrow_circled"
+
+                        app:layout_constraintBottom_toBottomOf="@+id/circleImageView2"
+                        app:layout_constraintEnd_toEndOf="@+id/circleImageView2"
+                        app:layout_constraintStart_toStartOf="@+id/circleImageView2"
+                        app:layout_constraintTop_toTopOf="@+id/circleImageView2" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/objeto_aprendizaje_preview"
+                android:layout_width="0dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="40dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sin_imagen"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/objeto_videoconferencia_toolbar" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/objeto_videoconferencia_toolbar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/toolbar_layout"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:navigationIcon="@drawable/ic_back_white_arrow">
+
+                <TextView
+                    android:id="@+id/objeto_aprendizaje_titulo_toolbar"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@color/femsa_white"
+                    android:textSize="@dimen/text_huge_size" />
+
+                <ImageView
+                    android:id="@+id/objeto_aprendizaje_download_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="20dp"
+                    android:scaleType="centerCrop"
+                    android:scaleX="1.5"
+                    android:scaleY="1.5"
+                    android:src="@drawable/ic_download_button" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <TextView
+                android:id="@+id/objeto_aprendizaje_estimado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:text="@string/tiempo_estimado"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/objeto_aprendizaje_corcholata_counter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/objeto_aprendizaje_corcholata_counter" />
+
+            <ImageView
+                android:id="@+id/objeto_aprendizaje_corcholata"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:adjustViewBounds="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/objeto_aprendizaje_cardview"
+                app:srcCompat="@mipmap/ic_corcholata" />
+
+            <ImageView
+                android:id="@+id/mark_as_read_image_objeto"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/objeto_aprendizaje_corcholata"
+                app:layout_constraintStart_toStartOf="@+id/objeto_aprendizaje_corcholata"
+                app:layout_constraintTop_toBottomOf="@+id/objeto_aprendizaje_corcholata"
+                app:srcCompat="@drawable/ic_red_checkmark" />
+
+
+            <Button
+                android:id="@+id/mark_as_read_objeto_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:background="@null"
+                android:text="@string/marcar_completado"
+                android:textAllCaps="false"
+                android:textColor="@color/femsa_red_b"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/mark_as_read_image_objeto"
+                app:layout_constraintStart_toEndOf="@+id/mark_as_read_image_objeto"
+                app:layout_constraintTop_toTopOf="@+id/mark_as_read_image_objeto" />
+
+            <WebView
+                android:id="@+id/objeto_aprendizaje_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:textSize="@dimen/text_big_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mark_as_read_objeto_button" />
+
+            <TextView
+                android:id="@+id/objeto_aprendizaje_corcholata_counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_huge_size"
+                app:layout_constraintBottom_toBottomOf="@+id/objeto_aprendizaje_corcholata"
+                app:layout_constraintStart_toEndOf="@+id/objeto_aprendizaje_corcholata"
+                app:layout_constraintTop_toTopOf="@+id/objeto_aprendizaje_corcholata" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/objeto_aprendizaje_cardview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/border_bottom_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/objeto_aprendizaje_preview">
+
+
+                <TextView
+                    android:id="@+id/objeto_aprendizaje_titulo_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_extra_huge_size"
+                    app:layout_constraintBottom_toBottomOf="@+id/pdf_like_iv"
+                    app:layout_constraintEnd_toStartOf="@+id/objeto_aprendizaje_like_iv"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/pdf_like_iv" />
+
+                <ImageView
+                    android:id="@+id/objeto_aprendizaje_like_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:src="@mipmap/ic_heart"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/objeto_aprendizaje_begin_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:scaleX="0.3"
+                android:scaleY="0.3"
+                android:src="@drawable/ic_pdf"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/objeto_aprendizaje_preview"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/objeto_aprendizaje_preview" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/informacion_objeto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/objeto_aprendizaje_description">
+
+                <ImageView
+                    android:id="@+id/imageView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_info" />
+
+                <TextView
+                    android:id="@+id/informacion_objeto_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/texto_informacion_microsoft"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView20"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

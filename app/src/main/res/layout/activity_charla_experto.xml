@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/femsa_white"
+    android:layout_height="wrap_content"
+    tools:context=".home.inicio.programa.objetosAprendizaje.Vedeoconferencia.VideoConferenciaActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/femsa_white"
+        android:visibility="visible">
+
+
+        <Button
+            android:id="@+id/btnAceptar"
+            style="@style/femsa_button_Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/activity_confirmar_horario_boton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_horarios" />
+
+        <Button
+            android:id="@+id/registry_usernumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:background="@android:color/transparent"
+            android:drawablePadding="15dp"
+            android:elevation="0dp"
+            android:paddingEnd="15dp"
+            android:paddingStart="0dp"
+            android:text="@string/fecha_placeholder"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/femsa_gray_c"
+            android:textSize="@dimen/text_big_size"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+            app:layout_constraintStart_toEndOf="@+id/imageView14"
+            app:layout_constraintTop_toBottomOf="@+id/objeto_aprendizaje_description"
+            app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+        <FrameLayout
+            android:id="@+id/frameLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginTop="45dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                android:id="@+id/objeto_aprendizaje_preview"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="-10dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sin_imagen"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/objeto_videoconferencia_toolbar" />
+
+            <ImageButton
+                android:id="@+id/btnVideoConferencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:scaleX="0.3"
+                android:scaleY="0.3"
+                app:srcCompat="@drawable/ic_charla_experto" />
+
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/objeto_aprendizaje_like_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:src="@mipmap/ic_heart"
+            app:layout_constraintBottom_toBottomOf="@+id/objeto_aprendizaje_titulo_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/objeto_aprendizaje_titulo_tv" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            app:layout_constraintStart_toStartOf="@+id/guideline12"
+            app:layout_constraintTop_toBottomOf="@+id/texto_fecha_solicitada_tv"
+            app:srcCompat="@mipmap/ic_red_calendar" />
+
+        <TextView
+            android:id="@+id/texto_fecha_solicitada_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/fecha_solicitada"
+            android:textColor="@color/femsa_gray_b"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/guideline12"
+            app:layout_constraintTop_toBottomOf="@+id/view15" />
+
+        <TextView
+            android:id="@+id/contestada_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/gracias"
+            android:textAlignment="center"
+            android:textColor="@color/femsa_black"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnAceptar" />
+
+        <TextView
+            android:id="@+id/contestada_descrpcion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/charla_reservada"
+            android:textAlignment="center"
+            android:textColor="@color/femsa_black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contesda_linea_roja" />
+
+        <TextView
+            android:id="@+id/objeto_aprendizaje_titulo_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/text_extra_huge_size"
+            app:layout_constraintEnd_toStartOf="@+id/objeto_aprendizaje_like_iv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout6" />
+
+        <View
+            android:id="@+id/red_line_fecha"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/femsa_red_d"
+            app:layout_constraintEnd_toEndOf="@+id/registry_usernumber"
+            app:layout_constraintStart_toStartOf="@+id/guideline12"
+            app:layout_constraintTop_toBottomOf="@+id/registry_usernumber" />
+
+        <View
+            android:id="@+id/contesda_linea_roja"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/femsa_red_d"
+            app:layout_constraintEnd_toEndOf="@+id/contestada_descrpcion"
+            app:layout_constraintStart_toStartOf="@+id/contestada_descrpcion"
+            app:layout_constraintTop_toBottomOf="@+id/contestada_titulo" />
+
+        <View
+            android:id="@+id/view15"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/femsa_gray_a"
+            app:layout_constraintEnd_toEndOf="@+id/objeto_aprendizaje_description"
+            app:layout_constraintStart_toStartOf="@+id/objeto_aprendizaje_description"
+            app:layout_constraintTop_toBottomOf="@+id/objeto_aprendizaje_description" />
+
+        <WebView
+            android:id="@+id/objeto_aprendizaje_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/border_bottom_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/objeto_aprendizaje_cardview" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/objeto_aprendizaje_cardview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/drawable_border_top"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/objeto_aprendizaje_titulo_tv">
+
+
+            <Button
+                android:id="@+id/mark_as_read_objeto_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@null"
+                android:text="@string/marcar_completado"
+                android:textAllCaps="false"
+                android:textColor="@color/femsa_red_b"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/mark_as_read_image_objeto"
+                app:layout_constraintStart_toEndOf="@+id/mark_as_read_image_objeto"
+                app:layout_constraintTop_toTopOf="@+id/mark_as_read_image_objeto" />
+
+            <ImageView
+                android:id="@+id/mark_as_read_image_objeto"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/objeto_aprendizaje_corcholata"
+                app:layout_constraintStart_toStartOf="@+id/objeto_aprendizaje_corcholata"
+                app:layout_constraintTop_toBottomOf="@+id/objeto_aprendizaje_corcholata"
+                app:srcCompat="@drawable/ic_red_checkmark" />
+
+            <ImageView
+                android:id="@+id/objeto_aprendizaje_corcholata"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@mipmap/ic_corcholata"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/objeto_aprendizaje_corcholata_counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_huge_size"
+                app:layout_constraintBottom_toBottomOf="@+id/objeto_aprendizaje_corcholata"
+                app:layout_constraintStart_toEndOf="@+id/objeto_aprendizaje_corcholata"
+                app:layout_constraintTop_toTopOf="@+id/objeto_aprendizaje_corcholata" />
+
+            <TextView
+                android:id="@+id/objeto_aprendizaje_estimado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="@string/tiempo_estimado"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/objeto_aprendizaje_corcholata_counter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/objeto_aprendizaje_corcholata_counter" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".75" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Contenedor_fechainicio"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="16dp"
+            android:elevation="8dp"
+            android:visibility="invisible"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/objeto_aprendizaje_titulo_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout6">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/horario_vedeo_conferencia_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/inicio_videoConferencia"
+                    android:textColor="@color/femsa_gray_d"
+                    android:textSize="@dimen/text_medium_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_horarios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registry_usernumber">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container_horas_chidas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/horario_inicio"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline10"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/horario_fin"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline11"
+                    app:layout_constraintStart_toStartOf="@+id/guideline10"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/seleccionar_charla_experto"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/guideline11"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent=".66" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent=".33" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcvHoras"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView24" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/objeto_charlaExperto_toolbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolbar_layout"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_back_white_arrow"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+            <ImageView
+                android:id="@+id/objeto_aprendizaje_download_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"
+                android:scaleType="centerCrop"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:src="@drawable/ic_download_button" />
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/charla_con_experto"
+                android:textAlignment="center"
+                android:textColor="@color/femsa_white"
+                android:textSize="@dimen/text_big_size" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

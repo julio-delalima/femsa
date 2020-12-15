@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/cl_activity_confirmar_horario"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/femsa_white"
+    android:focusableInTouchMode="true"
+    android:visibility="invisible"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- TOOLBAR ******************************************************************************* -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_confirmar_horario_activity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:theme="?attr/actionBarTheme"
+        app:popupTheme="@style/AppTheme.AppBarOverlay"
+        android:background="@drawable/toolbar_layout"
+        app:navigationIcon="@drawable/ic_back_white_arrow"
+        android:elevation="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_confirmar_horario_toolbar"
+            android:textColor="@color/femsa_white"
+            android:textAlignment="center"
+            android:maxLines="1"
+            android:layout_gravity="center"
+            android:textSize="@dimen/activity_confirmar_horario_toolbar_text_size"
+            android:ellipsize="end"
+            android:gravity="center"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- CONTENIDO ***************************************************************************** -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_confirmar_horario_activity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- CARDVIEW EXTERNO ************************************************************** -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_externo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- CARDVIEW "Selecciona el día..." *************************************** -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_mensaje"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="4dp"
+                        app:cardCornerRadius="8dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:text="@string/activity_confirmar_horario_descripcion"
+                            android:textAlignment="center"
+                            android:textColor="@color/femsa_black"
+                            android:textSize="@dimen/activity_confirmar_horario_instrucciones_text_size"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- MES ******************************************************************* -->
+                    <TextView
+                        android:id="@+id/tv_activity_confirmar_horario_mes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+
+                        android:textColor="@color/femsa_black"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/activity_confirmar_horario_mes_text_size"
+                        app:layout_constraintTop_toBottomOf="@id/cv_mensaje"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/tv_activity_confirmar_horario_anio"/>
+
+                    <!-- AÑO ******************************************************************* -->
+                    <TextView
+                        android:id="@+id/tv_activity_confirmar_horario_anio"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+
+                        android:textSize="@dimen/activity_confirmar_horario_anio_text_size"
+                        android:textColor="@color/femsa_gray_b"
+                        app:layout_constraintTop_toTopOf="@id/tv_activity_confirmar_horario_mes"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_activity_confirmar_horario_mes"
+                        app:layout_constraintStart_toEndOf="@id/tv_activity_confirmar_horario_mes"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <View
+                        android:id="@+id/view_separador_1"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@color/femsa_red_a"
+                        app:layout_constraintTop_toBottomOf="@id/tv_activity_confirmar_horario_anio"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+                    <!-- CALENDARIO ************************************************************ -->
+                    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                        android:id="@+id/mcv_activity_confirmar_horario"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:mcv_calendarMode="week"
+                        app:mcv_firstDayOfWeek="monday"
+                        app:mcv_selectionColor="@color/femsa_red_b"
+                        app:mcv_dateTextAppearance="@style/DayColorMaterialCalendarView"
+                        app:mcv_selectionMode="single"
+                        app:mcv_weekDayLabels="@array/diasSemana"
+                        app:mcv_weekDayTextAppearance="@style/WeekdayLabelMaterialCalendarView"
+                        app:layout_constraintTop_toBottomOf="@id/view_separador_1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <!-- HORARIO *************************************************************** -->
+                    <TextView
+                        android:id="@+id/tv_horario"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="32dp"
+                        android:text="@string/activity_confirmar_horario_horario_text"
+                        android:textColor="@color/femsa_black"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/activity_confirmar_horario_horario_text_size"
+                        android:visibility="gone"
+                        app:layout_constraintTop_toBottomOf="@id/mcv_activity_confirmar_horario"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_activity_confirmar_horario"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:layout_constraintTop_toBottomOf="@id/tv_horario"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- BOTÓN "Confirmar" ************************************************************* -->
+            <Button
+                android:id="@+id/btn_activity_confirmar_horario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/selector_button_confirmar_horario"
+                android:text="@string/activity_confirmar_horario_boton"
+                android:textAllCaps="false"
+                android:textSize="@dimen/activity_confirmar_horario_boton_text_size"
+                android:textColor="@color/selector_button_confirmar_horario"
+                android:enabled="false"
+                android:minHeight="32dp"
+                app:layout_constraintTop_toBottomOf="@id/cv_externo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

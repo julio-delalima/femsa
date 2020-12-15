@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/femsa_white"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/femsa_white"
+    tools:context=".home.inicio.programa.objetosAprendizaje.Vedeoconferencia.VideoConferenciaActivity">
+
+    <Button
+        android:id="@+id/mark_as_read_objeto_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@null"
+        android:text="@string/marcar_completado"
+        android:textAllCaps="false"
+        android:textColor="@color/femsa_red_b"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/mark_as_read_image_objeto"
+        app:layout_constraintStart_toEndOf="@+id/mark_as_read_image_objeto"
+        app:layout_constraintTop_toTopOf="@+id/mark_as_read_image_objeto" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/objeto_videoconferencia_toolbar">
+
+
+
+        <ImageView
+            android:id="@+id/objeto_aprendizaje_preview"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sin_imagen" />
+
+        <ImageButton
+            android:id="@+id/btnVideoConferencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:scaleX="0.3"
+            android:scaleY="0.3"
+            app:srcCompat="@drawable/ic_vedeo_conferencia" />
+
+    </FrameLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Contenedor_fechainicio"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
+        android:elevation="8dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/objeto_aprendizaje_cardview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout6">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/horario_vedeo_conferencia_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/inicio_videoConferencia"
+                android:textColor="@color/femsa_gray_d"
+                android:textSize="@dimen/text_medium_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/mark_as_read_image_objeto"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/objeto_aprendizaje_corcholata"
+        app:layout_constraintStart_toStartOf="@+id/objeto_aprendizaje_corcholata"
+        app:layout_constraintTop_toBottomOf="@+id/objeto_aprendizaje_corcholata"
+        app:srcCompat="@drawable/ic_red_checkmark" />
+
+    <ImageView
+        android:id="@+id/objeto_aprendizaje_corcholata"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/objeto_aprendizaje_cardview"
+        app:srcCompat="@mipmap/ic_corcholata" />
+
+    <TextView
+        android:id="@+id/objeto_aprendizaje_corcholata_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_huge_size"
+        app:layout_constraintBottom_toBottomOf="@+id/objeto_aprendizaje_corcholata"
+        app:layout_constraintStart_toEndOf="@+id/objeto_aprendizaje_corcholata"
+        app:layout_constraintTop_toTopOf="@+id/objeto_aprendizaje_corcholata" />
+
+
+    <TextView
+        android:id="@+id/objeto_aprendizaje_estimado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:text="@string/tiempo_estimado"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/objeto_aprendizaje_corcholata_counter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/objeto_aprendizaje_corcholata_counter" />
+
+    <WebView
+        android:id="@+id/objeto_aprendizaje_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:textSize="@dimen/text_big_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mark_as_read_objeto_button" />
+
+    <View
+        android:id="@+id/view15"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/femsa_gray_a"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/objeto_aprendizaje_description" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/objeto_aprendizaje_cardview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/border_bottom_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout6">
+
+
+        <ImageView
+            android:id="@+id/objeto_aprendizaje_like_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:src="@mipmap/ic_heart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/objeto_aprendizaje_titulo_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/text_extra_huge_size"
+            app:layout_constraintBottom_toBottomOf="@+id/pdf_like_iv"
+            app:layout_constraintEnd_toStartOf="@+id/objeto_aprendizaje_like_iv"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/pdf_like_iv" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/objeto_videoconferencia_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@drawable/toolbar_layout"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_back_white_arrow">
+
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/videoconferencia"
+            android:textAlignment="center"
+            android:textColor="@color/femsa_white"
+            android:textSize="@dimen/text_huge_size" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

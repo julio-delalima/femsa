@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- activity_confirmar_horario.xml ******************************************************** -->
+
+    <!-- TOOLBAR -->
+    <dimen name="activity_confirmar_horario_toolbar_text_size">30sp</dimen>
+
+    <!-- INSTRUCCIONES -->
+    <dimen name="activity_confirmar_horario_instrucciones_text_size">23sp</dimen>
+
+    <!-- MES -->
+    <dimen name="activity_confirmar_horario_mes_text_size">36sp</dimen>
+
+    <!-- AÑO -->
+    <dimen name="activity_confirmar_horario_anio_text_size">33sp</dimen>
+
+    <!-- "Horario" -->
+    <dimen name="activity_confirmar_horario_horario_text_size">36sp</dimen>
+
+    <!-- BOTÓN "Confirmar" -->
+    <dimen name="activity_confirmar_horario_boton_text_size">27sp</dimen>
+
+    <!-- item_horario.xml ********************************************************************** -->
+
+    <!-- HORA -->
+    <dimen name="tv_item_horario_hora_text_size">24sp</dimen>
+
+    <!-- TIPO -->
+    <dimen name="tv_item_horario_tipo_text_size">26sp</dimen>
+
+    <!-- NOMBRE/TEMA -->
+    <dimen name="tv_item_horario_nombre_tema_text_size">24sp</dimen>
+
+</resources>

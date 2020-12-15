@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TOOLBAR ******************************************************************************* -->
+    <dimen name="activity_no_disponible_toolbar_text_size">25sp</dimen>
+
+    <!-- DESCRIPCIÓN "Si no estás disponible..." *********************************************** -->
+    <dimen name="activity_no_disponible_descripcion_text_size">19sp</dimen>
+
+    <!-- TÍTULO "Correo de la persona asignada" ************************************************ -->
+    <dimen name="activity_no_disponible_titulo_text_size">26sp</dimen>
+
+    <!-- EDITEXT DEL CORREO ******************************************************************** -->
+    <dimen name="activity_no_disponible_edittext_text_size">21sp</dimen>
+
+    <!-- DOMINIO DE CORREO "@kof.com.mx" ******************************************************* -->
+    <dimen name="activity_no_disponible_dominio_correo_text_size">20sp</dimen>
+
+    <!-- CHECKBOX "No se encuentra ninguna persona..." ***************************************** -->
+    <dimen name="activity_no_disponible_checkbox_text_size">21sp</dimen>
+
+    <!-- BOTÓN "Aceptar" *********************************************************************** -->
+    <dimen name="activity_no_disponible_boton_text_size">27sp</dimen>
+
+    <!-- MARGIN PARA EL CHECKBOX *************************************************************** -->
+</resources>

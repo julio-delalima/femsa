@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="iv_logros_layout_imagen_width_height">70dp</dimen>
+    <dimen name="tv_logros_layout_titulo_text_size">13sp</dimen>
+    <dimen name="tv_logros_layout_descripcion_text_size">10sp</dimen>
+    <dimen name="tv_alcanzado_text_size">10sp</dimen>
+    <dimen name="tv_logros_layout_fecha_alcanzado_text_size">10sp</dimen>
+</resources>

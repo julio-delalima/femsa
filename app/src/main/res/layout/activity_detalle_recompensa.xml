@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nsv_activity_detalle_recompensa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/femsa_white"
+    android:visibility="invisible"
+
+    tools:context=".home.miCuenta.misRecompensas.misRecompensas.detalle.DetalleRecompensaActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- TOOLBAR *************************************************************************** -->
+        <Button
+            android:id="@+id/btn_activity_detalle_recompensa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/celulas_entrenamiento_button_background"
+            android:minHeight="32dp"
+            android:text="@string/activity_detalle_recompensa_text_solicitar"
+            android:textAllCaps="false"
+            android:textColor="@color/femsa_red_b"
+            android:textSize="@dimen/activity_detalle_recompensa_btn_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_1" />
+
+        <!-- IMAGEN - NOMBRE - PUNTOS REQUERIDOS *********************************************** -->
+        <TextView
+            android:id="@+id/tv_activity_detalle_recompensa_vigencia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/activity_detalle_recompensa_vigencia"
+            android:textAlignment="viewStart"
+            android:textColor="@color/femsa_gray_b"
+            android:textSize="@dimen/activity_detalle_recompensa_tv_textos_secundarios"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_descripcion" />
+
+        <!-- TEXTO "Descripción" *************************************************************** -->
+        <TextView
+            android:id="@+id/tv_activity_detalle_recompensa_descripcion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+
+            android:textAlignment="viewStart"
+            android:textColor="@color/femsa_black"
+            android:textSize="@dimen/activity_detalle_recompensa_tv_textos_secundarios"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_activity_detalle_recompensa_vigencia" />
+
+        <!-- VIGENCIA ************************************************************************** -->
+        <TextView
+            android:id="@+id/tv_terminos_condiciones"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/activity_detalle_recompensa_text_terminos_condiciones"
+            android:textAlignment="viewStart"
+            android:textColor="@color/femsa_black"
+            android:textSize="@dimen/activity_detalle_recompensa_tv_textos_principales"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_activity_detalle_recompensa_descripcion" />
+
+        <!-- DESCRIPCIÓN *********************************************************************** -->
+        <TextView
+            android:id="@+id/tv_activity_detalle_recompensa_terminos_condiciones"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+
+            android:textAlignment="viewStart"
+            android:textColor="@color/femsa_black"
+            android:textSize="@dimen/activity_detalle_recompensa_tv_textos_secundarios"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_terminos_condiciones" />
+
+        <!-- TEXTO "Términos y Condiciones" *************************************************************** -->
+        <TextView
+            android:id="@+id/tv_descripcion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/activity_detalle_recompensa_text_descripcion"
+            android:textAlignment="viewStart"
+            android:textColor="@color/femsa_black"
+            android:textSize="@dimen/activity_detalle_recompensa_tv_textos_principales"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cl_activity_detalle_recompensa" />
+
+        <!-- TÉRMINOS Y CONDICIONES ************************************************************ -->
+        <View
+            android:id="@+id/view_1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/femsa_gray_a"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_activity_detalle_recompensa_terminos_condiciones" />
+
+        <!-- SEPARADOR HORIZONTAL ************************************************************** -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_activity_detalle_recompensa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar_activity_detalle_recompensa">
+
+            <!-- IMAGEN ************************************************************************ -->
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/riv_activity_detalle_recompensa"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_main"
+                app:layout_constraintDimensionRatio="4:3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:riv_corner_radius="5dp" />
+
+            <TextView
+                android:id="@+id/tv_activity_detalle_recompensa_nombre"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/gradiente_recompensas"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+
+                android:textAlignment="center"
+                android:textColor="@color/femsa_white"
+                android:textSize="@dimen/activity_detalle_recompensa_tv_nombre_text_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/recompensa_round_outline"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/iv_corcholata"
+                    android:layout_width="@dimen/activity_detalle_recompensa_iv_corcholata_width_height"
+                    android:layout_height="@dimen/activity_detalle_recompensa_iv_corcholata_width_height"
+                    android:src="@mipmap/ic_corcholata"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tv_activity_detalle_recompensa_puntos"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_activity_detalle_recompensa_puntos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+
+                    android:textColor="@color/femsa_black"
+                    android:textSize="@dimen/activity_detalle_recompensa_tv_puntos_text_size"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_corcholata"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/iv_corcholata"
+                    app:layout_constraintTop_toTopOf="@id/iv_corcholata" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!-- NOMBRE ************************************************************************ -->
+
+            <!-- PUNTOS - CORCHOLATA *********************************************************** -->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- BOTÓN "Solicitar" ***************************************************************** -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_activity_detalle_recompensa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolbar_layout"
+            android:elevation="4dp"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_back_white_arrow"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="@string/activity_detalle_recompensa_toolbar_title"
+                android:textAlignment="center"
+                android:textColor="@color/femsa_white"
+                android:textSize="@dimen/mis_recompensas_toolbar_text_size" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

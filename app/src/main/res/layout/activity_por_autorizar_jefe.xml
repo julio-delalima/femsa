@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    android:id="@+id/nsv_activity_por_autorizar_jefe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/femsa_white"
+    android:visibility="invisible"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/activity_por_autorizar_jefe_toolbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:theme="?attr/actionBarTheme"
+            android:background="@drawable/toolbar_layout"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:navigationIcon="@drawable/ic_back_white_arrow"
+            android:elevation="4dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/activity_detalle_celula_entrenamiento_text_white"
+                android:textSize="@dimen/tv_activity_detalle_celula_entrenamiento_toolbar_title_text_size"
+                android:text="@string/celula_entrenamiento_item_estado_por_autorizar"
+                android:ellipsize="end"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <!-- FECHA Y NÚMERO DE SOLICITUD ******************************************************* -->
+        <include
+            android:id="@+id/layout_activity_por_autorizar_jefe_datos_solicitud"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_fecha_numero_solicitud"
+            app:layout_constraintTop_toBottomOf="@id/activity_por_autorizar_jefe_toolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- DATOS SOLICITANTE ********************************************************************* -->
+        <include
+            android:id="@+id/layout_activity_por_autorizar_jefe_datos_solicitante"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_datos_solicitante"
+            app:layout_constraintTop_toBottomOf="@id/layout_activity_por_autorizar_jefe_datos_solicitud"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- PARTICIPANTES ********************************************************************* -->
+        <include
+            android:id="@+id/layout_activity_por_autorizar_jefe_participantes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_participantes"
+            app:layout_constraintTop_toBottomOf="@id/layout_activity_por_autorizar_jefe_datos_solicitante"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- INFORMACIÓN DE LA INDUCCIÓN ******************************************************* -->
+        <include
+            android:id="@+id/layout_activity_por_autorizar_jefe_informacion_induccion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_informacion_induccion"
+            app:layout_constraintTop_toBottomOf="@id/layout_activity_por_autorizar_jefe_participantes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- RANGO DE FECHAS ******************************************************************* -->
+        <include
+            android:id="@+id/layout_activity_por_autorizar_jefe_rango_fechas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_rango_fechas"
+            app:layout_constraintTop_toBottomOf="@id/layout_activity_por_autorizar_jefe_informacion_induccion"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- INFORMACIÓN FINAL ***************************************************************** -->
+        <Button
+            android:id="@+id/btn_activity_por_autorizar_jefe_enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:elevation="8dp"
+            android:maxLines="1"
+            android:minHeight="32dp"
+            android:background="@drawable/celulas_entrenamiento_button_background"
+            android:text="@string/activity_detalle_celula_entrenamiento_enviar"
+            android:textColor="@color/activity_detalle_celula_entrenamiento_text_red"
+            android:textAllCaps="false"
+            android:textStyle="normal"
+            android:textSize="@dimen/btn_activity_detalle_celula_entrenamiento_enviar_text_size"
+            app:layout_constraintTop_toBottomOf="@id/layout_activity_por_autorizar_jefe_rango_fechas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_contactanos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/activity_detalle_celula_entrenamiento_contactanos"
+            android:textColor="@color/activity_detalle_celula_entrenamiento_text_black"
+            android:textStyle="bold"
+            android:textSize="@dimen/tv_contactanos_text_size"
+            app:layout_constraintTop_toBottomOf="@id/btn_activity_por_autorizar_jefe_enviar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_contactanos_descripcion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/activity_detalle_celula_entrenamiento_contactanos_descripcion"
+            android:textAlignment="center"
+            android:textColor="@color/activity_detalle_celula_entrenamiento_text_black"
+            android:textSize="@dimen/tv_contactanos_descripcion_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_contactanos" />
+
+        <ImageButton
+            android:id="@+id/ib_activity_por_autorizar_jefe_contacto_administrador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"
+            android:src="@drawable/ic_mail"
+            android:elevation="8dp"
+            android:background="@drawable/activity_detalle_celula_entrenamiento_mail_background"
+            app:layout_constraintTop_toBottomOf="@id/tv_contactanos_descripcion"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+        <!-- GUIDELINES ************************************************************************ -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gl_layout_fecha_numero_solicitud_1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

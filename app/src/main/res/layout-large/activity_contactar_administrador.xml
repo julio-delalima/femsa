@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/femsa_white"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_activity_contactar_administrador"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar_layout"
+        android:theme="?attr/actionBarTheme"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_back_white_arrow"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="@string/activity_contactar_administrador_toolbar_text"
+            android:textAlignment="center"
+            android:textColor="@color/celulas_entrenamiento_general_text_white"
+            android:textSize="@dimen/tv_activity_contactar_administrador_toolbar_title_text_size" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_activity_contactar_administrador"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- CARDVIEW DE CONTENIDO DEL MENSAJE ***************************************************** -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_contacto_contenido_mensaje"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_contacto_descripcion"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_contacto_titulo"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/activity_contactar_administrador_titulo"
+                                android:textAlignment="center"
+                                android:textColor="@color/celulas_entrenamiento_general_text_black"
+                                android:textSize="@dimen/tv_contacto_titulo_text_size"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:text="@string/activity_contactar_administrador_descripcion"
+                                android:textAlignment="center"
+                                android:textColor="@color/celulas_entrenamiento_general_text_black"
+                                android:textSize="@dimen/tv_contacto_descripción_text_size"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/tv_contacto_titulo" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- PARA: ************************************************************************* -->
+                    <TextView
+                        android:id="@+id/tv_contacto_para"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginEnd="32dp"
+                        android:text="@string/activity_contactar_administrador_para"
+                        android:textColor="@color/femsa_gray_e"
+                        android:textSize="@dimen/tv_contacto_informacion_titulo_text_size"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cv_contacto_descripcion"/>
+
+                    <TextView
+                        android:id="@+id/tv_activity_contactar_administrador_para"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="32dp"
+                        android:text="@string/activity_contactar_administrador_a_quien_corresponda"
+                        android:textColor="@color/celulas_entrenamiento_general_text_black"
+                        android:textSize="@dimen/tv_contacto_informacion_contenido_text_size"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_contacto_para" />
+
+                    <TextView
+                        android:id="@+id/tv_activity_contactar_administrador_para_puesto"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginEnd="32dp"
+
+                        android:textColor="@color/celulas_entrenamiento_general_text_black"
+                        android:textSize="@dimen/tv_contacto_informacion_titulo_text_size"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_activity_contactar_administrador_para" />
+
+                    <!-- DE: *************************************************************************** -->
+                    <TextView
+                        android:id="@+id/tv_contacto_de"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginEnd="32dp"
+                        android:text="@string/activity_contactar_administrador_de"
+                        android:textColor="@color/femsa_gray_e"
+                        android:textSize="@dimen/tv_contacto_informacion_titulo_text_size"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_activity_contactar_administrador_para_puesto" />
+
+                    <TextView
+                        android:id="@+id/tv_activity_contactar_administrador_de"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="32dp"
+                        tools:text="Antonio Sánchez Mujica"
+                        android:textColor="@color/celulas_entrenamiento_general_text_black"
+                        android:textSize="@dimen/tv_contacto_informacion_contenido_text_size"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_contacto_de" />
+
+                    <!-- CORREO ELECTRÓNICO ************************************************************ -->
+                    <TextView
+                        android:id="@+id/tv_contacto_correo_electronico"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginEnd="32dp"
+                        android:text="@string/activity_contactar_administrador_correo_electronico"
+                        android:textColor="@color/femsa_gray_e"
+                        android:textSize="@dimen/tv_contacto_informacion_titulo_text_size"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_activity_contactar_administrador_de" />
+
+                    <TextView
+                        android:id="@+id/tv_activity_contactar_administrador_correo_electronico"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="32dp"
+                        tools:text="antonio.sanchez@kof.com.mx"
+                        android:textColor="@color/celulas_entrenamiento_general_text_black"
+                        android:textSize="@dimen/tv_contacto_informacion_contenido_text_size"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_contacto_correo_electronico" />
+
+                    <!-- MENSAJE *********************************************************************** -->
+                    <TextView
+                        android:id="@+id/tv_contacto_mensaje"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginEnd="32dp"
+                        android:text="@string/activity_contactar_administrador_mensaje"
+                        android:textColor="@color/femsa_gray_e"
+                        android:textSize="@dimen/tv_contacto_informacion_titulo_text_size"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_activity_contactar_administrador_correo_electronico" />
+
+                    <EditText
+                        android:id="@+id/et_activity_contactar_administrador_mensaje"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginEnd="32dp"
+                        android:layout_marginBottom="32dp"
+                        android:maxLines="10"
+                        android:minLines="10"
+                        android:gravity="top"
+                        android:background="@drawable/activity_contactar_administrador_edit_text_layout"
+                        android:textSize="@dimen/et_contacto_mensaje_text_size"
+                        android:maxLength="200"
+                        app:layout_constraintTop_toBottomOf="@id/tv_contacto_mensaje"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btn_activity_contactar_administrador_enviar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="8dp"
+                android:maxLines="1"
+                android:minHeight="32dp"
+                android:background="@drawable/celulas_entrenamiento_button_background"
+                android:text="@string/activity_contactar_administrador_enviar"
+                android:textColor="@color/activity_contactar_administrador_text_red"
+                android:textAllCaps="false"
+                android:textSize="@dimen/btn_activity_contactar_administrador_enviar_text_size"
+                app:layout_constraintTop_toBottomOf="@id/cv_contacto_contenido_mensaje"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

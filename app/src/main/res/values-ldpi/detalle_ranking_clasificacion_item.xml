@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="civ_detalle_ranking_clasificacion_foto_perfil_width">50dp</dimen>
+    <dimen name="civ_detalle_ranking_clasificacion_foto_perfil_height">50dp</dimen>
+    <dimen name="tv_detalle_ranking_clasificacion_text_size">13sp</dimen>
+    <dimen name="tv_detalle_ranking_clasificacion_width">20dp</dimen>
+    <dimen name="tv_detalle_ranking_clasificacion_height">20dp</dimen>
+    <dimen name="tv_detalle_clasificacion_item_nombre_text_size">16sp</dimen>
+    <dimen name="iv_detalle_clasificacion_flag_width">20dp</dimen>
+    <dimen name="iv_detalle_clasificacion_flag_height">20dp</dimen>
+    <dimen name="tv_detalle_clasificacion_pais_text_size">13sp</dimen>
+    <dimen name="iv_detalle_clasificacion_corcholata_width">20dp</dimen>
+    <dimen name="iv_detalle_clasificacion_corcholata_height">20dp</dimen>
+    <dimen name="tv_detalle_clasificacion_numero_corcholatas_text_size">13sp</dimen>
+    <dimen name="cb_detalle_clasificacion_like_width">25dp</dimen>
+    <dimen name="cb_detalle_clasificacion_like_height">25dp</dimen>
+    <dimen name="tv_detalle_clasificacion_numero_likes_text_size">13sp</dimen>
+</resources>

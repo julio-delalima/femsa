@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "877823383570",
+    "firebase_url": "https://talento-femsa.firebaseio.com",
+    "project_id": "talento-femsa",
+    "storage_bucket": "talento-femsa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:877823383570:android:28f2ce0696512ee2",
+        "android_client_info": {
+          "package_name": "com.femsa.sferea"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "877823383570-vlrfi76o9fujkem2v23otbfdl00em6b3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.femsa.sferea",
+            "certificate_hash": "288ca06e21b21d75cc351fcd6015213d18d99ba6"
+          }
+        },
+        {
+          "client_id": "877823383570-b73ak69hpm1jp2tao3drtqc8vesj70dq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaZWxV2RmMWSagobdJPlJJIrX-gDVn6ms"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "877823383570-b73ak69hpm1jp2tao3drtqc8vesj70dq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "877823383570-gfl6pq5cmu3ejn9vapqvg1ims13d76kv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sferea.talentorh"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

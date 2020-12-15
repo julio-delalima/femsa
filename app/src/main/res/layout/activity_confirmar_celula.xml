@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_scroll_confirmar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        tools:context=".home.miCuenta.MiCuentaFragment">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/configuracion_toolbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolbar_layout"
+            android:elevation="3dp"
+            android:textAlignment="center"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_back_white_arrow"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="@null">
+
+            <TextView
+                android:id="@+id/configuracion_toolbar_titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:text="@string/title_celulas"
+                android:textColor="@color/femsa_white"
+                android:textSize="22sp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Supremo_supremo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/configuracion_toolbar">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_contenedor_instrucciones_confirmar_celula"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintCircleRadius="8dp"
+                    app:cardCornerRadius="8dp"
+                    app:layout_constraintBottom_toTopOf="@+id/cardview_supremo_confirmar_solicitud"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/Title_layout_confirmar"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/confirmar_celula"
+                            android:textAlignment="center"
+                            android:textColor="@color/femsa_black"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_supremo_confirmar_solicitud"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    app:cardCornerRadius="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cv_contenedor_instrucciones_confirmar_celula">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/label_fecha_solicitud_tv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:text="@string/fecha_solicitud"
+                            android:textColor="@color/femsa_black"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/confirmar_celula_fecha_solicitud"
+                            style="@style/TextAppearance.AppCompat.Title"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+                            android:textColor="@color/femsa_black"
+                            android:textSize="@dimen/text_big_size"
+                            app:layout_constraintEnd_toEndOf="@+id/label_fecha_solicitud_tv"
+                            app:layout_constraintStart_toStartOf="@+id/label_fecha_solicitud_tv"
+                            app:layout_constraintTop_toBottomOf="@+id/label_fecha_solicitud_tv" />
+
+                        <View
+                            android:id="@+id/view6"
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@color/femsa_gray_a"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/confirmar_celula_fecha_solicitud" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/confirmar_celula_datos_solicitante_cv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            app:cardCornerRadius="8dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/view6">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/confirmar_celula_pais_solicitante_foto"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginTop="4dp"
+                                    android:src="@mipmap/ic_launcher_background"
+                                    app:layout_constraintStart_toStartOf="@+id/confirmar_celula_pais_titulo"
+                                    app:layout_constraintTop_toBottomOf="@+id/confirmar_celula_pais_titulo" />
+
+                                <TextView
+                                    android:id="@+id/textView21"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginTop="8dp"
+                                    android:text="@string/layout_datos_solicitante_titulo"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/femsa_black"
+                                    android:textSize="20sp"
+                                    app:layout_constraintStart_toEndOf="@+id/view7"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/confirmar_celula_titulo"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginTop="16dp"
+                                    android:text="@string/label_numero_empleado"
+                                    android:textColor="@color/femsa_gray_e"
+                                    android:textSize="12sp"
+                                    app:layout_constraintStart_toEndOf="@+id/view7"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+                                <TextView
+                                    android:id="@+id/confirmar_celula_num_empleado"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/numero_empleado"
+                                    android:textColor="@color/femsa_black"
+                                    android:textSize="16sp"
+                                    app:layout_constraintStart_toStartOf="@+id/confirmar_celula_titulo"
+                                    app:layout_constraintTop_toBottomOf="@+id/confirmar_celula_titulo" />
+
+                                <TextView
+                                    android:id="@+id/confirmar_celula_posicion_solicitante_titulo"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:text="@string/layout_datos_solicitante_posicion_solicitante"
+                                    android:textColor="@color/femsa_gray_e"
+                                    android:textSize="12sp"
+                                    app:layout_constraintStart_toStartOf="@+id/confirmar_celula_num_empleado"
+                                    app:layout_constraintTop_toBottomOf="@+id/confirmar_celula_num_empleado" />
+
+                                <TextView
+                                    android:id="@+id/confirmar_celula_posicion_solicitante"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="8dp"
+                                    android:text="@string/posicion_example"
+                                    android:textColor="@color/femsa_black"
+                                    android:textSize="16sp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="@+id/confirmar_celula_posicion_solicitante_titulo"
+                                    app:layout_constraintTop_toBottomOf="@+id/confirmar_celula_posicion_solicitante_titulo" />
+
+                                <TextView
+                                    android:id="@+id/confirmar_celula_nombre_solicitante_tv"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/numero_empleado"
+                                    android:textColor="@color/femsa_black"
+                                    android:textSize="16sp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="@+id/confirmar_celula_nombre_solicitante"
+                                    app:layout_constraintTop_toBottomOf="@+id/confirmar_celula_nombre_solicitante" />
+
+                                <TextView
+                                    android:id="@+id/confirmar_celula_nombre_solicitante"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:text="@string/layout_datos_solicitante_nombre_solicitante"
+                                    android:textColor="@color/femsa_gray_e"
+                                    android:textSize="12sp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="@+id/confirmar_celula_posicion_solicitante"
+                                    app:layout_constraintTop_toBottomOf="@+id/confirmar_celula_posicion_solicitante" />
+
+                                <TextView
+                                    android:id="@+id/confirmar_celula_pais_solicitante"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:text="@string/corporativo"
+                                    android:textColor="@color/femsa_black"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="@+id/confirmar_celula_pais_solicitante_foto"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/confirmar_celula_pais_solicitante_foto"
+                                    app:layout_constraintTop_toTopOf="@+id/confirmar_celula_pais_solicitante_foto" />
+
+                                <TextView
+                                    android:id="@+id/confirmar_celula_pais_titulo"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:text="@string/pais_solicitante"
+                                    android:textColor="@color/femsa_gray_e"
+                                    android:textSize="12sp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="@+id/confirmar_celula_nombre_solicitante_tv"
+                                    app:layout_constraintTop_toBottomOf="@+id/confirmar_celula_nombre_solicitante_tv" />
+
+                                <TextView
+                                    android:id="@+id/confirmar_celula_correo"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginBottom="16dp"
+                                    android:text="@string/correo_example"
+                                    android:textColor="@color/femsa_black"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="@+id/confirmar_celula_correo_titulo"
+                                    app:layout_constraintTop_toBottomOf="@+id/confirmar_celula_correo_titulo" />
+
+                                <TextView
+                                    android:id="@+id/confirmar_celula_correo_titulo"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:text="@string/activity_contactar_administrador_correo_electronico"
+                                    android:textColor="@color/femsa_gray_e"
+                                    android:textSize="12sp"
+                                    app:layout_constraintStart_toStartOf="@+id/confirmar_celula_pais_solicitante_foto"
+                                    app:layout_constraintTop_toBottomOf="@+id/confirmar_celula_pais_solicitante" />
+
+                                <View
+                                    android:id="@+id/view7"
+                                    android:layout_width="2dp"
+                                    android:layout_height="0dp"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:background="@color/femsa_red_d"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/confirmar_celula_participantes_cv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            app:cardCornerRadius="8dp"
+                            android:layout_marginEnd="8dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/confirmar_celula_datos_solicitante_cv">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/confirmar_celula_editar_participantes"
+                                    android:layout_width="25dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:adjustViewBounds="true"
+                                    android:src="@mipmap/ic_editar_circled"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/participantes_titulo"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:text="@string/layout_participantes_titulo"
+                                    android:textColor="@color/femsa_black"
+                                    android:textStyle="bold"
+                                    android:textSize="20sp"
+                                    app:layout_constraintEnd_toStartOf="@+id/confirmar_celula_editar_participantes"
+                                    app:layout_constraintStart_toEndOf="@+id/view8"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <View
+                                    android:id="@+id/view8"
+                                    android:layout_width="2dp"
+                                    android:layout_height="0dp"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:background="@color/femsa_red_d"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/recycler_confirmar_celula_participantes"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginBottom="16dp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="@+id/participantes_titulo"
+                                    app:layout_constraintTop_toBottomOf="@+id/participantes_titulo" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/confirmar_celula_datos_celula_cv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="16dp"
+                            app:cardCornerRadius="8dp"
+                            android:layout_marginEnd="8dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/confirmar_celula_participantes_cv">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/confirmar_celula_editar_temas"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:src="@mipmap/ic_editar_circled"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <ImageView
+                                    android:id="@+id/confirmar_celula_pais_solicitante_foto_tema"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginTop="8dp"
+                                    android:src="@mipmap/ic_launcher_background"
+                                    app:layout_constraintStart_toStartOf="@+id/confirmar_celula_pais_solicitante_tema_titulo"
+                                    app:layout_constraintTop_toBottomOf="@+id/confirmar_celula_pais_solicitante_tema_titulo" />
+
+                                <ImageView
+                                    android:id="@+id/confirmar_celula_pais_receptor_foto_tema"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginTop="4dp"
+                                    android:src="@mipmap/ic_launcher_background"
+                                    app:layout_constraintStart_toStartOf="@+id/confirmar_celula_pais_receptor_titulo"
+                                    app:layout_constraintTop_toBottomOf="@+id/confirmar_celula_pais_receptor_titulo" />
+
+                                <TextView
+                                    android:id="@+id/informacion_celula_titulo"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:text="@string/layout_informacion_celula_titulo"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/femsa_black"
+                                    android:textSize="20sp"
+                                    app:layout_constraintEnd_toStartOf="@+id/confirmar_celula_editar_temas"
+                                    app:layout_constraintStart_toEndOf="@+id/view9"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/tema_general_titulo"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:text="@string/layout_informacion_induccion_tema_general"
+                                    android:textColor="@color/femsa_black"
+                                    android:textSize="12sp"
+                                    app:layout_constraintStart_toStartOf="@+id/informacion_celula_titulo"
+                                    app:layout_constraintTop_toBottomOf="@+id/informacion_celula_titulo" />
+
+                                <TextView
+                                    android:id="@+id/confirmar_celula_tema_general"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/numero_empleado"
+                                    android:textColor="@color/femsa_black"
+                                    android:textSize="16sp"
+                                    app:layout_constraintStart_toStartOf="@+id/tema_general_titulo"
+                                    app:layout_constraintTop_toBottomOf="@+id/tema_general_titulo" />
+
+                                <TextView
+                                    android:id="@+id/confirmar_celula_pais_solicitante_tema_titulo"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:text="@string/pais_solicitante"
+                                    android:textColor="@color/femsa_black"
+                                    android:textSize="12sp"
+                                    app:layout_constraintStart_toStartOf="@+id/confirmar_celula_tema_general"
+                                    app:layout_constraintTop_toBottomOf="@+id/confirmar_celula_tema_general" />
+
+                                <TextView
+                                    android:id="@+id/confirmar_celula_pais_solicitante_tema_tv"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:text="@string/posicion_example"
+                                    android:textColor="@color/femsa_black"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="@+id/confirmar_celula_pais_solicitante_foto_tema"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/confirmar_celula_pais_solicitante_foto_tema"
+                                    app:layout_constraintTop_toTopOf="@+id/confirmar_celula_pais_solicitante_foto_tema" />
+
+                                <TextView
+                                    android:id="@+id/confirmar_celula_pais_receptor_tema_tv"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:text="@string/numero_empleado"
+                                    android:textColor="@color/femsa_black"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="@+id/confirmar_celula_pais_receptor_foto_tema"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/confirmar_celula_pais_receptor_foto_tema"
+                                    app:layout_constraintTop_toTopOf="@+id/confirmar_celula_pais_receptor_foto_tema" />
+
+                                <TextView
+                                    android:id="@+id/confirmar_celula_pais_receptor_titulo"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:text="@string/pais_receptor"
+                                    android:textColor="@color/femsa_black"
+                                    android:textSize="12sp"
+                                    app:layout_constraintStart_toStartOf="@+id/confirmar_celula_pais_solicitante_foto_tema"
+                                    app:layout_constraintTop_toBottomOf="@+id/confirmar_celula_pais_solicitante_tema_tv" />
+
+                                <View
+                                    android:id="@+id/view9"
+                                    android:layout_width="2dp"
+                                    android:layout_height="0dp"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:background="@color/femsa_red_d"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/confirmar_celulas_temas_rv"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_marginBottom="16dp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="@+id/confirmar_celula_pais_receptor_foto_tema"
+                                    app:layout_constraintTop_toBottomOf="@+id/confirmar_celula_pais_receptor_tema_tv"></androidx.recyclerview.widget.RecyclerView>
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            app:cardCornerRadius="8dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="16dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/confirmar_celula_datos_celula_cv">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/confirmar_celula_editar_fechas"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:src="@mipmap/ic_editar_circled"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/confirmar_celula_fechas_titulo"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    android:text="@string/title_rango_fechas"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/femsa_black"
+                                    android:textSize="20sp"
+                                    app:layout_constraintEnd_toStartOf="@+id/confirmar_celula_editar_fechas"
+                                    app:layout_constraintStart_toEndOf="@+id/view10"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/confirmar_celula_fecha_inicio_titulo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:text="@string/layout_rango_fechas_de"
+                                    android:textColor="@color/femsa_black"
+                                    android:textSize="12sp"
+                                    app:layout_constraintStart_toStartOf="@+id/confirmar_celula_fechas_titulo"
+                                    app:layout_constraintTop_toBottomOf="@+id/confirmar_celula_fechas_titulo" />
+
+                                <TextView
+                                    android:id="@+id/confirmar_celula_fecha_inicio"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="16dp"
+
+                                    android:textColor="@color/femsa_black"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="@+id/confirmar_celula_fecha_inicio_titulo"
+                                    app:layout_constraintTop_toBottomOf="@+id/confirmar_celula_fecha_inicio_titulo" />
+
+                                <TextView
+                                    android:id="@+id/confirmar_celula_fecha_fin_titulo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:text="@string/layout_rango_fechas_al"
+                                    android:textColor="@color/femsa_black"
+                                    android:textSize="12sp"
+                                    app:layout_constraintStart_toEndOf="@+id/confirmar_celula_fecha_inicio"
+                                    app:layout_constraintTop_toTopOf="@+id/confirmar_celula_fecha_inicio_titulo" />
+
+                                <TextView
+                                    android:id="@+id/confirmar_celula_fecha_fin"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="16dp"
+
+                                    android:textColor="@color/femsa_black"
+                                    android:textSize="16sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="@+id/confirmar_celula_fecha_fin_titulo"
+                                    app:layout_constraintTop_toBottomOf="@+id/confirmar_celula_fecha_fin_titulo" />
+
+                                <View
+                                    android:id="@+id/view10"
+                                    android:layout_width="2dp"
+                                    android:layout_height="0dp"
+                                    android:layout_marginStart="16dp"
+                                    android:layout_marginTop="8dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:background="@color/femsa_red_d"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/confirmar_celula_enviar_button"
+            style="@style/femsa_button_Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/activity_contactar_administrador_enviar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Supremo_supremo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

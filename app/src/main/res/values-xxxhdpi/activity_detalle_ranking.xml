@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tv_activity_detalle_ranking_toolbar_title_text_size">21sp</dimen>
+    <dimen name="tv_activity_detalle_ranking_titulo_text_size">22sp</dimen>
+    <dimen name="civ_activity_detalle_ranking_foto_perfil_width">85dp</dimen>
+    <dimen name="civ_activity_detalle_ranking_foto_perfil_height">85dp</dimen>
+    <dimen name="tv_activity_detalle_ranking_clasificacion_width">30dp</dimen>
+    <dimen name="tv_activity_detalle_ranking_clasificacion_height">30dp</dimen>
+    <dimen name="tv_activity_detalle_ranking_clasificacion_text_size">16sp</dimen>
+    <dimen name="tv_activity_detalle_ranking_nombre_text_size">20sp</dimen>
+    <dimen name="iv_activity_detalle_ranking_flag_width">25dp</dimen>
+    <dimen name="iv_activity_detalle_ranking_flag_height">25dp</dimen>
+    <dimen name="tv_activity_detalle_ranking_pais_text_size">16sp</dimen>
+    <dimen name="iv_activity_detalle_ranking_corcholata_width">25dp</dimen>
+    <dimen name="iv_activity_detalle_ranking_corcholata_height">25dp</dimen>
+    <dimen name="tv_activity_detalle_ranking_numero_corcholatas_text_size">16sp</dimen>
+    <dimen name="iv_activity_detalle_ranking_like_width">25dp</dimen>
+    <dimen name="iv_activity_detalle_ranking_like_height">25dp</dimen>
+    <dimen name="tv_activity_detalle_ranking_numero_likes_text_size">16sp</dimen>
+    <dimen name="tv_activity_detalle_top_10_text_size">20sp</dimen>
+</resources>

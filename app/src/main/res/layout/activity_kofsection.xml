@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_refresh_notificaciones"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/femsa_white"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/kof_main_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    tools:context=".home.miCuenta.miPerfil.ProfileActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/header_imager_kof_container"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/shape_bottom_border_radius"
+                android:elevation="0dp"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/kofsection_imageview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/shape_bottom_border_radius"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sin_imagen" />
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/kofsection_title_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+
+                android:layout_marginTop="16dp"
+
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toStartOf="@+id/kofsection_corcholata"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/header_imager_kof_container" />
+
+            <TextView
+                android:id="@+id/kofsection_corcholata_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_huge_size"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/header_imager_kof_container" />
+
+            <ImageView
+                android:id="@+id/kofsection_corcholata"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:scaleX="0.6"
+                android:scaleY="0.6"
+                android:src="@mipmap/ic_corcholata"
+                app:layout_constraintBottom_toBottomOf="@+id/kofsection_corcholata_tv"
+                app:layout_constraintEnd_toStartOf="@+id/kofsection_corcholata_tv"
+                app:layout_constraintTop_toTopOf="@+id/kofsection_corcholata_tv" />
+
+            <ImageView
+                android:id="@+id/kfsection_share_btn"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_share"
+                app:layout_constraintEnd_toEndOf="@+id/kofsection_corcholata"
+                app:layout_constraintStart_toStartOf="@+id/kofsection_corcholata"
+                app:layout_constraintTop_toBottomOf="@+id/kofsection_corcholata" />
+
+            <ImageView
+                android:id="@+id/kofsection_heart"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/ic_heart"
+                app:layout_constraintBottom_toBottomOf="@+id/kfsection_share_btn"
+                app:layout_constraintStart_toEndOf="@+id/kfsection_share_btn"
+                app:layout_constraintTop_toTopOf="@+id/kfsection_share_btn" />
+
+            <ImageView
+                android:id="@+id/kofsection_heart_gone"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/ic_full_heart"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/kfsection_share_btn"
+                app:layout_constraintStart_toEndOf="@+id/kfsection_share_btn"
+                app:layout_constraintTop_toTopOf="@+id/kfsection_share_btn" />
+
+            <TextView
+                android:id="@+id/kofsection_date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="48dp"
+
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kofsection_title_tv" />
+
+            <TextView
+                android:id="@+id/kofsection_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/kofsection_date_tv" />
+
+            <WebView
+                android:id="@+id/kofsection_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/border_bottom_gray"
+                android:paddingBottom="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kofsection_date_tv" />
+
+            <TextView
+                android:id="@+id/kofsection_temario"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/border_bottom_color"
+                android:text="@string/kofsection_temario"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_huge_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/kofsection_recycler"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="4dp"
+                android:visibility="invisible"
+                android:layout_marginBottom="24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kofsection_temario" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/border_top_bottom_gray"
+                android:orientation="vertical"
+                android:paddingTop="2dp"
+                android:paddingBottom="10dp"
+                app:layout_constraintBottom_toTopOf="@+id/kofsection_recycler"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kofsection_description">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/border_bottom_color"
+                    android:padding="5dp"
+                    android:text="@string/adn_kof"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_huge_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:weightSum="10">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.5" />
+
+                    <ImageView
+                        android:id="@+id/kofsection_medal"
+                        android:layout_width="40dp"
+                        android:layout_height="60dp"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="1"
+                        android:paddingTop="4dp"
+                        android:layout_gravity="center"
+                        android:paddingBottom="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_excelencia_v2" />
+
+                    <ImageView
+                        android:id="@+id/kofsection_arrows"
+                        android:layout_width="40dp"
+                        android:layout_height="60dp"
+                        android:adjustViewBounds="true"
+                        android:layout_weight="1"
+                        android:paddingTop="4dp"
+                        android:layout_gravity="center"
+                        android:paddingBottom="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_decisores_v1" />
+
+                    <ImageView
+                        android:id="@+id/kofsections_muscles"
+                        android:layout_width="40dp"
+                        android:layout_height="60dp"
+                        android:adjustViewBounds="true"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_mundo_mamadisimo_v2" />
+
+                    <ImageView
+                        android:id="@+id/kofsections_hands"
+                        android:layout_width="40dp"
+                        android:layout_height="60dp"
+                        android:adjustViewBounds="true"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_primero_v2" />
+
+                    <ImageView
+                        android:id="@+id/kofsections_human"
+                        android:layout_width="40dp"
+                        android:layout_height="60dp"
+                        android:adjustViewBounds="true"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_foco_v2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.5" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/kof_toolbar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/transparent_toolbar"
+                android:minHeight="?attr/actionBarSize"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:navigationIcon="@drawable/ic_back_white_arrow"
+                app:title="@null" />
+
+            <Button
+                android:id="@+id/kof_section_inscripcion_boton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="@string/kof_inscripcion"
+                android:textAllCaps="false"
+                style="@style/femsa_button_Style"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

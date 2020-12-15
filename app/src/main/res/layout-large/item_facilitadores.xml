@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- CHECKBOX PARA SELECCIONAR/DESELECCIONAR *********************************************** -->
+    <CheckBox
+        android:id="@+id/cb_facilitador_item_autorizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/autorizacion_selector"
+        android:checked="true"
+        android:clickable="false"
+        app:layout_constraintEnd_toEndOf="@id/gl_facilitador_item_item_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gl_facilitador_item_item_2" />
+
+    <!-- INFORMACIÓN *************************************************************************** -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/gl_facilitador_item_item_1"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_facilitador"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:textStyle="bold"
+                android:text="@string/facilitador_item_titulo"
+                android:textColor="@color/celulas_entrenamiento_general_text_black"
+                android:textSize="@dimen/tv_jefe_directo_item_texto_primario_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view_facilitador_item_separador_1"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/celulas_entrenamiento_general_separador_gris"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_facilitador" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_facilitador_item_datos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@id/view_facilitador_item_separador_2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_facilitador_item_separador_1">
+
+                <FrameLayout
+                    android:id="@+id/fl_facilitador_item_foto_perfil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/civ_facilitador_item_foto"
+                        android:layout_width="@dimen/civ_jefe_directo_item_foto_width_height"
+                        android:layout_height="@dimen/civ_jefe_directo_item_foto_width_height"
+                        android:src="@drawable/celula_entrenamiento_persona" />
+
+                    <ImageView
+                        android:id="@+id/iv_facilitador_item_pais"
+                        android:layout_width="@dimen/iv_jefe_directo_item_pais_width_height"
+                        android:layout_height="@dimen/iv_jefe_directo_item_pais_width_height"
+                        android:layout_gravity="bottom|end"
+                        android:src="@mipmap/ic_mexico_flag" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_facilitador_item_nombre"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Miguel Castillo Galván"
+                    android:textColor="@color/celulas_entrenamiento_general_text_black"
+                    android:textSize="@dimen/tv_jefe_directo_item_texto_primario_text_size"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@id/gl_facilitador_item_3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/fl_facilitador_item_foto_perfil" />
+
+                <TextView
+                    android:id="@+id/tv_facilitador_item_puesto"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Gerente de Nuevos Negocios"
+                    android:textColor="@color/celulas_entrenamiento_general_text_black"
+                    android:textSize="@dimen/tv_jefe_directo_item_texto_secundario_text_size"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/fl_facilitador_item_foto_perfil"
+                    app:layout_constraintTop_toBottomOf="@id/gl_facilitador_item_3" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gl_facilitador_item_3"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.5" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/view_facilitador_item_separador_2"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/celulas_entrenamiento_general_separador_gris"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cl_facilitador_item_datos" />
+
+            <TextView
+                android:id="@+id/tv_tema_especifico"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/facilitador_item_tema_especifico"
+                android:textColor="@color/celulas_entrenamiento_general_text_black"
+                android:textSize="@dimen/tv_jefe_directo_item_texto_primario_text_size"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/guideline8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_facilitador_item_separador_2" />
+
+            <TextView
+                android:id="@+id/tv_facilitador_item_tema_especifico"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="¿Cómo nació FEMSA? dsaddddddddddddddddddddddddddddddddddddddddddddd"
+                android:textColor="@color/femsa_gray_d"
+                android:textSize="@dimen/tv_jefe_directo_item_texto_secundario_text_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_tema_especifico" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <TextView
+                android:id="@+id/item_facilitadores_fecha"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="22/Sep/1997"
+                android:textColor="@color/femsa_gray_d"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline8"
+                app:layout_constraintTop_toTopOf="@+id/tv_tema_especifico" />
+
+            <TextView
+                android:id="@+id/item_facilitadores_horario"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="10:00 H - 22:00 H"
+                android:textColor="@color/femsa_gray_d"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/item_facilitadores_fecha"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/item_facilitadores_fecha"
+                app:layout_constraintTop_toBottomOf="@+id/item_facilitadores_fecha" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- GUIDELINES **************************************************************************** -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_facilitador_item_item_1"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_facilitador_item_item_2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:id="@+id/swipe_home_controller"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+    <FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".home.inicio.componentes.activity.HomeActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarlayout_home_activity"
+        android:layout_width="match_parent"
+        android:background="@drawable/grandiente_transparencia"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/browser_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/edittext_circled_shape"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/buscador_cancelar_boton_btn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <EditText
+                        android:id="@+id/home_buscador"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:drawableStart="@mipmap/ic_browser_loupe"
+                        android:hint="@string/home_browser"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:scaleX="0.95"
+                        android:scaleY="0.95"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@color/femsa_white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/homeactivity_broswer_close_iv"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/homeactivity_broswer_close_iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/ic_close"
+                        android:visibility="visible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <Button
+                    android:id="@+id/buscador_cancelar_boton_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="@string/cancel"
+                    android:textColor="@color/femsa_white"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/constraintLayout3"
+                    app:layout_constraintTop_toTopOf="@+id/constraintLayout3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/femsa_red_b"
+                android:textAllCaps="false"
+                android:elevation="0dp"
+                app:elevation="0dp"
+                app:collapseIcon="@drawable/ic_burger">
+                <!-- android:background="@drawable/transparent_toolbar" -->
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/femsa_white"
+                    android:textSize="22sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/homeActivity_recyclerViewHeader_categories"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="false"
+                    android:visibility="visible" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/filter_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:weightSum="12">
+
+                    <TextView
+                        android:id="@+id/filter_main_category_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:gravity="center_vertical"
+
+                        android:textColor="@color/femsa_white"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/categoryArrow"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:scaleX="0.6"
+                        android:scaleY="0.6"
+                        app:layout_constraintBottom_toBottomOf="@+id/filter_main_category_tv"
+                        app:layout_constraintStart_toEndOf="@+id/filter_main_category_tv"
+                        app:layout_constraintTop_toTopOf="@+id/filter_main_category_tv"
+                        app:srcCompat="@drawable/ic_white_down_arrow" />
+
+                    <TextView
+                        android:id="@+id/filter_subcategory_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:text="@string/all_programs_button"
+                        android:textColor="@color/femsa_white"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/categoryArrow"
+                        app:layout_constraintEnd_toStartOf="@+id/subcategoryArrow"
+                        app:layout_constraintStart_toEndOf="@+id/categoryArrow"
+                        app:layout_constraintTop_toTopOf="@+id/categoryArrow" />
+
+                    <ImageView
+                        android:id="@+id/subcategoryArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:scaleType="centerCrop"
+                        android:scaleX="0.6"
+                        android:scaleY="0.6"
+                        app:layout_constraintBottom_toBottomOf="@+id/filter_subcategory_tv"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/filter_subcategory_tv"
+                        app:srcCompat="@drawable/ic_white_down_arrow" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        layout="@layout/content_home_activity_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

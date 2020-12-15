@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.inicio.programa.objetosAprendizaje.Enlace.EnlaceActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- TOOLBAR *************************************************************************** -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_activity_enlace"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:theme="?attr/actionBarTheme"
+            android:background="@drawable/toolbar_layout"
+            android:elevation="4dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:navigationIcon="@drawable/ic_back_white_arrow"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/femsa_white"
+                android:textSize="@dimen/objeto_aprendizaje_toolbar_title_text_size"
+                android:text="@string/activity_enlace_toolbar_title"
+                android:ellipsize="end"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <!-- IMAGEN **************************************************************************** -->
+        <FrameLayout
+            android:id="@+id/fl_container"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintDimensionRatio="12:11"
+            app:layout_constraintTop_toBottomOf="@id/toolbar_activity_enlace"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_activity_enlace_imagen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/femsa_green_a"/>
+
+            <ImageView
+                android:id="@+id/iv_activity_enlace_accion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_book"
+                android:layout_gravity="center_vertical|center_horizontal"/>
+
+        </FrameLayout>
+
+        <!-- INFORMACIÓN *********************************************************************** -->
+
+        <!-- NOMBRE -->
+        <TextView
+            android:id="@+id/tv_activity_enlace_nombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/femsa_black"
+            android:textSize="@dimen/objeto_aprendizaje_nombre_text_size"
+            app:layout_constraintTop_toBottomOf="@id/fl_container"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/iv_activity_enlace_like"/>
+
+        <!-- CORAZÓN -->
+        <ImageView
+            android:id="@+id/iv_activity_enlace_like"
+            android:layout_width="@dimen/objeto_aprendizaje_like_width_height"
+            android:layout_height="@dimen/objeto_aprendizaje_like_width_height"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:src="@mipmap/ic_heart"
+            app:layout_constraintTop_toBottomOf="@id/fl_container"
+            app:layout_constraintStart_toEndOf="@id/tv_activity_enlace_nombre"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- SEPARADOR HORIZONTAL -->
+        <View
+            android:id="@+id/view_separador_1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/femsa_gray_a"
+            app:layout_constraintTop_toBottomOf="@id/tv_activity_enlace_nombre"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- CORCHOLATA -->
+        <ImageView
+            android:id="@+id/iv_corcholata"
+            android:layout_width="@dimen/objeto_aprendizaje_corcholata_width_height"
+            android:layout_height="@dimen/objeto_aprendizaje_corcholata_width_height"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="24dp"
+            android:src="@mipmap/ic_corcholata"
+            app:layout_constraintTop_toBottomOf="@id/view_separador_1"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <!-- NÚMERO DE CORCHOLATAS -->
+        <TextView
+            android:id="@+id/tv_activity_enlace_corcholatas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+
+            android:textColor="@color/femsa_black"
+            android:textSize="@dimen/objeto_aprendizaje__numero_corcholatas_text_size"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/iv_corcholata"
+            app:layout_constraintStart_toEndOf="@id/iv_corcholata"
+            app:layout_constraintBottom_toBottomOf="@id/iv_corcholata"
+            app:layout_constraintEnd_toStartOf="@id/guideline_1"/>
+
+        <!-- "Tiempo estimado: ..." -->
+        <TextView
+            android:id="@+id/tv_activity_enlace_tiempo_estimado"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/activity_enlace_text_tiempo_estimado"
+            android:textColor="@color/femsa_black"
+            android:textStyle="bold"
+            android:textSize="@dimen/objeto_aprendizaje_textos_generales_text_size"
+            app:layout_constraintTop_toBottomOf="@id/view_separador_1"
+            app:layout_constraintStart_toEndOf="@id/guideline_1"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- DESCRIPCIÓN -->
+        <TextView
+            android:id="@+id/tv_activity_enlace_descripcion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="64dp"
+            android:textColor="@color/femsa_gray_d"
+            android:textSize="@dimen/objeto_aprendizaje_textos_generales_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_activity_enlace_tiempo_estimado" />
+
+        <!-- GUIDELINES ************************************************************************ -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_1"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

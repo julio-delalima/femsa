@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="4dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:id="@+id/tv_tema_especifico"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/activity_detalle_celula_entrenamiento_tema_especifico"
+                android:textColor="@color/activity_detalle_celula_entrenamiento_text_black"
+                android:textSize="@dimen/tema_especifico_layout_titulo_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_tema_especifico_layout_tema_especifico"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                tools:text="TEMA ESPECÍFICO"
+                android:textColor="@color/activity_detalle_celula_entrenamiento_text_black"
+                android:textSize="@dimen/tema_especifico_layout_tema_text_size"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_tema_especifico" />
+
+            <View
+                android:id="@+id/view_tema_especifico_layout_1"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/activity_detalle_celula_entrenamiento_separador_horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_tema_especifico_layout_tema_especifico" />
+
+            <TextView
+                android:id="@+id/tv_subtemas_especificos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/activity_detalle_celula_entrenamiento_subtemas_especificos"
+                android:textColor="@color/activity_detalle_celula_entrenamiento_text_black"
+                android:textSize="@dimen/tema_especifico_layout_titulo_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_tema_especifico_layout_1" />
+
+
+            <TextView
+                android:id="@+id/tv_tema_especifico_layout_subtema_especifico"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                tools:text="SUBTEMAS ESPECÍFICOS"
+                android:textColor="@color/activity_detalle_celula_entrenamiento_text_black"
+                android:textSize="@dimen/tema_especifico_layout_contenido_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_subtemas_especificos" />
+
+            <TextView
+                android:id="@+id/tv_subarea_proceso"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/activity_detalle_celula_entrenamiento_subarea_proceso"
+                android:textColor="@color/activity_detalle_celula_entrenamiento_text_black"
+                android:textSize="@dimen/tema_especifico_layout_titulo_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_tema_especifico_layout_subtema_especifico" />
+
+            <TextView
+                android:id="@+id/tv_tema_especifico_layout_subarea_proceso"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                tools:text="SUBAREA/PROCESO"
+                android:textColor="@color/activity_detalle_celula_entrenamiento_text_black"
+                android:textSize="@dimen/tema_especifico_layout_contenido_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_subarea_proceso" />
+
+            <TextView
+                android:id="@+id/tv_facilitador"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/activity_detalle_celula_entrenamiento_facilitador"
+                android:textColor="@color/activity_detalle_celula_entrenamiento_text_black"
+                android:textSize="@dimen/tema_especifico_layout_titulo_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_tema_especifico_layout_subarea_proceso" />
+
+            <TextView
+                android:id="@+id/tv_tema_especifico_layout_facilitador"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                tools:text="POSICIÓN FACILITADOR"
+                android:textColor="@color/activity_detalle_celula_entrenamiento_text_black"
+                android:textSize="@dimen/tema_especifico_layout_contenido_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_facilitador" />
+
+            <TextView
+                android:id="@+id/tv_tema_especifico_layout_nombre_facilitador"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                tools:text="NOMBRE_FACILITADOR"
+                android:textColor="@color/activity_detalle_celula_entrenamiento_text_gray"
+                android:textSize="@dimen/tema_especifico_layout_titulo_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_tema_especifico_layout_facilitador" />
+
+            <TextView
+                android:id="@+id/tv_tiempo_sugerido"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/item_tema_especifico_tiempo_sugerido"
+                android:textColor="@color/activity_detalle_celula_entrenamiento_text_black"
+                android:textSize="@dimen/tema_especifico_layout_titulo_text_size"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_tema_especifico_layout_nombre_facilitador" />
+
+            <TextView
+                android:id="@+id/tv_tema_especifico_layout_tiempo_sugerido"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="TIEMPO SUGERIDO"
+                android:textColor="@color/activity_detalle_celula_entrenamiento_text_black"
+                android:textSize="@dimen/tema_especifico_layout_contenido_text_size"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_tiempo_sugerido"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

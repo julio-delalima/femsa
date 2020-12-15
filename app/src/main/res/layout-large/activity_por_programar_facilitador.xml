@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/cl_activity_por_programar_facilitador"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="invisible"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- TOOLBAR ******************************************************************************* -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_activity_por_programar_facilitador"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar_layout"
+        android:theme="?attr/actionBarTheme"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:navigationIcon="@drawable/ic_back_white_arrow"
+        android:elevation="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/femsa_white"
+            android:textSize="@dimen/tv_activity_por_programar_facilitador_toolbar_text_size"
+            android:text="@string/celula_entrenamiento_item_estado_por_programar"
+            android:ellipsize="end"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_activity_por_programar_facilitador"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true">
+
+            <!-- TEXTO INICIAL ***************************************************************** -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_texto_inicial"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="16dp"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="16dp"
+                        android:text="@string/activity_detalle_celula_entrenamiento_facilitador_texto_inicial"
+                        android:textColor="@color/femsa_black"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/tv_activity_por_programar_facilitador_mensaje_text_size"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- FECHA Y NÚMERO DE SOLICITUD *************************************************** -->
+            <include
+                android:id="@+id/layout_activity_por_programar_facilitador_datos_solicitud"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_fecha_numero_solicitud"
+                app:layout_constraintTop_toBottomOf="@id/cv_texto_inicial"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <!-- DATOS DE SOLICITANTE ********************************************************** -->
+            <include
+                android:id="@+id/layout_activity_por_programar_facilitador_datos_solicitante"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_datos_solicitante"
+                app:layout_constraintTop_toBottomOf="@id/layout_activity_por_programar_facilitador_datos_solicitud"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <!-- PARTICIPANTES ***************************************************************** -->
+            <include
+                android:id="@+id/layout_activity_por_programar_facilitador_participantes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_participantes"
+                app:layout_constraintTop_toBottomOf="@id/layout_activity_por_programar_facilitador_datos_solicitante"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <!-- INFORMACIÓN DE LA INDUCCIÓN *************************************************** -->
+            <include
+                android:id="@+id/layout_activity_por_programar_facilitador_informacion_induccion"
+                layout="@layout/layout_informacion_induccion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout_activity_por_programar_facilitador_participantes" />
+
+            <!-- RANGO DE FECHAS *************************************************************** -->
+            <include
+                android:id="@+id/layout_activity_por_programar_facilitador_rango_fechas"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                layout="@layout/layout_rango_fechas"
+                app:layout_constraintTop_toBottomOf="@id/layout_activity_por_programar_facilitador_informacion_induccion"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <!-- INFORMACIÓN FINAL ************************************************************* -->
+            <Button
+                android:id="@+id/btn_activity_por_programar_facilitador_confirmar_horario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:elevation="8dp"
+                android:maxLines="1"
+                android:minHeight="32dp"
+                android:text="@string/activity_por_programar_facilitador_confirmar_horario"
+                android:textAllCaps="false"
+                android:textColor="@color/femsa_red_b"
+                android:textSize="@dimen/btn_activity_por_programar_facilitador_confirmar_horario_text_size"
+                android:background="@drawable/celulas_entrenamiento_button_background"
+                app:layout_constraintTop_toBottomOf="@id/layout_activity_por_programar_facilitador_rango_fechas"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <View
+                android:id="@+id/view_activity_por_programar_facilitador_separador_1"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/femsa_gray_a"
+                app:layout_constraintTop_toBottomOf="@id/btn_activity_por_programar_facilitador_confirmar_horario"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_contactanos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/activity_contactar_administrador_titulo"
+                android:textColor="@color/femsa_black"
+                android:textStyle="bold"
+                android:textSize="@dimen/tv_activity_por_programar_facilitador_contactanos_text_size"
+                app:layout_constraintTop_toBottomOf="@id/view_activity_por_programar_facilitador_separador_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_contactanos_descripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/activity_por_programar_facilitador_descripcion"
+                android:textAlignment="center"
+                android:textColor="@color/femsa_black"
+                android:textSize="@dimen/tv_activity_por_programar_facilitador_contactanos_mensaje_text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_contactanos" />
+
+            <ImageButton
+                android:id="@+id/ib_activity_por_programar_facilitador_contacto_administrador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_mail"
+                android:elevation="8dp"
+                android:background="@drawable/activity_detalle_celula_entrenamiento_mail_background"
+                app:layout_constraintTop_toBottomOf="@id/tv_contactanos_descripcion"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_activity_por_programar_facilitador_no_disponible"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/activity_por_programar_facilitador_no_disponible"
+                android:textAlignment="center"
+                android:textColor="@color/femsa_red_b"
+                android:textSize="@dimen/tv_activity_por_programar_facilitador_opciones_text_size"
+                app:layout_constraintEnd_toStartOf="@id/gl_activity_por_programar_facilitador_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ib_activity_por_programar_facilitador_contacto_administrador" />
+
+            <TextView
+                android:id="@+id/tv_activity_por_programar_facilitador_no_responsable"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:text="@string/activity_por_programar_facilitador_no_responsable"
+                android:textAlignment="center"
+                android:textColor="@color/femsa_red_b"
+                android:textSize="@dimen/tv_activity_por_programar_facilitador_opciones_text_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/gl_activity_por_programar_facilitador_1"
+                app:layout_constraintTop_toBottomOf="@id/ib_activity_por_programar_facilitador_contacto_administrador" />
+
+            <!-- GUIDELINES ******************************************************************** -->
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gl_activity_por_programar_facilitador_1"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

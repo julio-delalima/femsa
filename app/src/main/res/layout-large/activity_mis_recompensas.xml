@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/femsa_white"
+    tools:context=".home.miCuenta.misRecompensas.misRecompensas.listado.MisRecompensasActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true">
+
+        <!-- TOOLBAR *************************************************************************** -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_activity_mis_recompensas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolbar_layout"
+            android:theme="?attr/actionBarTheme"
+            android:elevation="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_back_white_arrow"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="@string/activity_mis_recompensas_toolbar_title"
+                android:textAlignment="center"
+                android:textColor="@color/femsa_white"
+                android:textSize="@dimen/mis_recompensas_toolbar_text_size" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <!-- IMAGEN DE FONDO ******************************************************************* -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            android:scaleType="centerCrop"
+            android:src="@drawable/header_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <!-- ENCABEZADO ************************************************************************ -->
+        <FrameLayout
+            android:id="@+id/fl_activity_mis_recompensas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar_activity_mis_recompensas">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/trofeo" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="130dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardMaxElevation="4dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_tus_puntos"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/activity_mis_recompensas_text_tus_puntos"
+                        android:textAlignment="center"
+                        android:textColor="@color/femsa_black"
+                        android:textSize="@dimen/activity_mis_recompensas_text_tus_puntos_text_size"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/view_1"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="@dimen/activity_mis_recompensas_view_separador_1_margin"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="@dimen/activity_mis_recompensas_view_separador_1_margin"
+                        android:background="@color/femsa_red_b"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_tus_puntos" />
+
+                    <ImageView
+                        android:id="@+id/iv_activity_mis_recompensas_corcholata"
+                        android:layout_width="@dimen/activity_mis_recompensas_iv_corcholata_width_height"
+                        android:layout_height="@dimen/activity_mis_recompensas_iv_corcholata_width_height"
+                        android:src="@mipmap/ic_corcholata"
+                        app:layout_constraintBottom_toBottomOf="@id/tv_activity_mis_recompensas_tus_puntos"
+                        app:layout_constraintEnd_toStartOf="@id/tv_activity_mis_recompensas_tus_puntos"
+                        app:layout_constraintStart_toStartOf="@id/view_1"
+                        app:layout_constraintTop_toTopOf="@id/tv_activity_mis_recompensas_tus_puntos" />
+
+                    <TextView
+                        android:id="@+id/tv_activity_mis_recompensas_tus_puntos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+
+                        android:textColor="@color/femsa_black"
+                        android:textSize="@dimen/activity_mis_recompensas_tv_tus_puntos_text_size"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@id/view_1"
+                        app:layout_constraintStart_toEndOf="@id/iv_activity_mis_recompensas_corcholata"
+                        app:layout_constraintTop_toBottomOf="@id/view_1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </FrameLayout>
+
+        <!-- TABLAYOUT ************************************************************************* -->
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tl_activity_mis_recompensas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            style="@style/MisRecompensasTabLayout"
+            android:background="@color/femsa_white"
+            app:tabTextAppearance="@style/MisRecompensasTabTextAppearance"
+            app:tabSelectedTextColor="@color/femsa_black"
+            app:tabTextColor="@color/femsa_gray_b"
+            app:tabGravity="fill"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fl_activity_mis_recompensas">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_mis_recompensas_text_canjear"
+                android:textAlignment="center" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_mis_recompensas_text_historial"
+                android:textAlignment="center" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <!-- FRAMELAYOUT PARA COLOCAR LOS FRAGMENT DEPENDIENDO DEL TAB QUE SE SELECCIONE ******* -->
+        <FrameLayout
+            android:id="@+id/fl_activity_mis_recompensas_fragments"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tl_activity_mis_recompensas" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

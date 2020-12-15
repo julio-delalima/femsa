@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/bandera_pais_menu_lateral"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:background="@drawable/shape_nottom_norder_radius"
+        android:scaleType="centerCrop"
+        android:src="@drawable/carrouselimage_whatis"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pager_item_whatIs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/what_is_app"
+        android:textColor="@color/femsa_white"
+        android:textSize="@dimen/text_huge_size"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/whatis_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/whatis_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="The UAC’s most remarkable discovery was in Hell’s Kadingir Sanctum. Surrounded by nearly impassable terrain, the team discovered a sealed tomb – its entrance and walls covered in protective runes and imprisonment incantations. The tomb revealed many artifacts, including the Praetor suit"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        android:textColor="@color/femsa_white"
+        app:layout_constraintBottom_toTopOf="@+id/pager_item_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/pager_item_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradiente_carrusel"
+        android:text="TextView"
+        android:paddingBottom="24dp"
+        android:textColor="@color/femsa_white"
+        android:textSize="@dimen/text_extra_huge_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

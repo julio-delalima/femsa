@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#990000</color>
+    <color name="femsa_red_d">#be0101</color>
+    <color name="femsa_red_b">#ed1c24</color> <!-- el color principal de iconos, botones, textos rojos, etc-->
+    <color name="femsa_red_a">#dd2b4a</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="femsa_gray_e">#3d3d3d</color>
+    <color name="femsa_gray_d">#707070</color>
+    <color name="femsa_gray_c">#8f8f8f</color>
+    <color name="femsa_gray_b">#9c9c9c</color>
+    <color name="femsa_gray_a">#d9d9d9</color>
+    <color name="femsa_white">#FFFFFF</color>
+    <color name="femsa_green_a">#1fb542</color>
+    <color name="femsa_yellow_a">#fb851d</color>
+    <color name="femsa_black">#000000</color>
+    <!-- CÉLULAS DE ENTRENAMIENTO ************************************************************** -->
+
+    <color name="celulas_entrenamiento_general_text_black">#000000</color>
+    <color name="celulas_entrenamiento_general_text_white">#FFFFFF</color>
+    <color name="celulas_entrenamiento_general_text_red">#ED1C24</color>
+    <color name="celulas_entrenamiento_general_separador_gris">#D9D9D9</color>
+
+    <color name="celula_entrenamiento_item_separador_vertical">#C40015</color>
+    <color name="celula_entrenamiento_item_separador_horizontal">#EBEBEB</color>
+    <color name="celula_entrenamiento_item_text_red">#ED1C24</color>
+    <color name="celula_entrenamiento_item_text_black">#000000</color>
+    <color name="celula_entrenamiento_item_text_white">#FFFFFF</color>
+
+    <color name="activity_detalle_celula_entrenamiento_text_black">#000000</color>
+    <color name="activity_detalle_celula_entrenamiento_text_white">#FFFFFF</color>
+    <color name="activity_detalle_celula_entrenamiento_text_red">#ED1C24</color>
+    <color name="activity_detalle_celula_entrenamiento_text_gray">#AFAFAF</color>
+    <color name="activity_detalle_celula_entrenamiento_separador_horizontal">#E0E0E0</color>
+
+    <color name="activity_contactar_administrador_text_red">#ED1C24</color>
+
+    <color name="fragment_mensaje_enviado_dialog_separador_horizontal">#FC828C</color>
+    <color name="fragment_mensaje_enviado_dialog_text_gray">#777777</color>
+
+    <!-- MI RANKING **************************************************************************** -->
+    <color name="activity_detalle_ranking_separador_horizontal">#F5002E</color>
+    <color name="activity_detalle_ranking_toolbar_color">#ED1C24</color>
+    <color name="activity_detalle_ranking_text_black">#000000</color>
+    <color name="activity_detalle_ranking_text_gray">#9F9F9F</color>
+    <color name="activity_detalle_ranking_text_white">#FFFFFF</color>
+    <color name="detalle_ranking_clasificacion_item_text_black">#000000</color>
+    <color name="detalle_ranking_clasificacion_item_text_white">#FFFFFF</color>
+    <color name="detalle_ranking_clasificacion_item_separador_horizontal">#9B9B9B</color>
+
+    <!-- MI ACTIVIDAD ************************************************************************** -->
+    <color name="mi_actividad_general_text_black">#000000</color>
+    <color name="mi_actividad_general_text_white">#FFFFFF</color>
+    <color name="mi_actividad_general_color_red">#ED1C24</color>
+
+    <color name="activity_mi_actividad_separador_horizontal_1">#F5002E</color>
+    <color name="activity_mi_actividad_separador_horizontal_2">#D9D9D9</color>
+
+    <color name="video_interactivo_cardview">#b10007</color>
+
+</resources>

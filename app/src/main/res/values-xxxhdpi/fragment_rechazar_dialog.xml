@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TÍTULO ******************************************************************************** -->
+    <dimen name="fragment_no_responsable_dialog_titulo">24sp</dimen>
+
+    <!-- DESCRIPCIÓN *************************************************************************** -->
+    <dimen name="fragment_no_responsable_dialog_descripcion">17sp</dimen>
+
+    <!-- BOTÓN ********************************************************************************* -->
+    <dimen name="fragment_no_responsable_dialog_boton">19sp</dimen>
+
+</resources>

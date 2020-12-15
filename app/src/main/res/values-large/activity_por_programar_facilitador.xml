@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TOOLBAR ******************************************************************************* -->
+    <dimen name="tv_activity_por_programar_facilitador_toolbar_text_size">24sp</dimen>
+
+    <!-- MENSAJE "Te han propuesto como facilitador..." **************************************** -->
+    <dimen name="tv_activity_por_programar_facilitador_mensaje_text_size">19sp</dimen>
+
+    <!-- BOTÓN "Confirmar Horario" ************************************************************* -->
+    <dimen name="btn_activity_por_programar_facilitador_confirmar_horario_text_size">25sp</dimen>
+
+    <!-- MENSAJE "¡Contáctanos!" *************************************************************** -->
+    <dimen name="tv_activity_por_programar_facilitador_contactanos_text_size">25sp</dimen>
+
+    <!-- MENSAJE "Para cualquier aclaración..." ************************************************ -->
+    <dimen name="tv_activity_por_programar_facilitador_contactanos_mensaje_text_size">22sp</dimen>
+
+    <!-- OPCIONES DE LA PARTE INFERIOR ********************************************************* -->
+    <dimen name="tv_activity_por_programar_facilitador_opciones_text_size">23sp</dimen>
+</resources>

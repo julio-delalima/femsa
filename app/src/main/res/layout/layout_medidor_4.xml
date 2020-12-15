@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    android:layout_margin="4dp"
+    android:background="@color/femsa_white"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/fl_medidor_cuatro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_layout_medidor_imagen_medidor_cuatro"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/iv_activity_mi_actividad_medidor_height"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="-1dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ic_medidor_progreso_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/mi_actividad_odom_decisor"
+                android:layout_width="@dimen/imagen_activity_mi_actividad_medidor_width_height"
+                android:layout_height="@dimen/imagen_activity_mi_actividad_medidor_width_height"
+                android:layout_gravity="center|bottom"
+                android:src="@drawable/ic_decisores_v1" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_layout_medidor_texto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_mi_actividad_cuarto_cuadro"
+            android:textAlignment="center"
+            android:textSize="@dimen/texto_activity_mi_actividad_medidor_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fl_medidor_cuatro" />
+
+        <View
+            android:id="@+id/view_layout_medidor_separador_1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/activity_mi_actividad_separador_horizontal_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_layout_medidor_texto" />
+
+        <!-- PROGRESO ****************************************************************** -->
+        <TextView
+            android:id="@+id/tv_layout_medidor_progreso_cuatro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="4dp"
+            android:text="0"
+            android:textAlignment="textEnd"
+            android:textColor="@color/mi_actividad_general_text_black"
+            android:textSize="@dimen/tv_activity_mi_actividad_medidor_progreso_text_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tv_layout_medidor_de"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_layout_medidor_separador_1" />
+
+        <TextView
+            android:id="@+id/tv_layout_medidor_de"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/activity_mi_actividad_de"
+            android:textAlignment="center"
+            android:textColor="@color/mi_actividad_general_text_black"
+            android:textSize="@dimen/tv_activity_mi_actividad_medidor_progreso_separador_text_size"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tv_layout_medidor_limite_cuatro"
+            app:layout_constraintStart_toEndOf="@id/tv_layout_medidor_progreso_cuatro"
+            app:layout_constraintTop_toBottomOf="@id/view_layout_medidor_separador_1" />
+
+        <TextView
+            android:id="@+id/tv_layout_medidor_limite_cuatro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:text="0"
+            android:textAlignment="viewStart"
+            android:textColor="@color/mi_actividad_general_text_black"
+            android:textSize="@dimen/tv_activity_mi_actividad_medidor_progreso_text_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_layout_medidor_de"
+            app:layout_constraintTop_toBottomOf="@id/view_layout_medidor_separador_1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

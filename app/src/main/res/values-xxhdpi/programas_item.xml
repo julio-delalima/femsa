@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="texto_programas_item_text_size">12sp</dimen>
+    <dimen name="iv_programas_item_corcholata_width_height">20dp</dimen>
+
+    <dimen name="view_programas_item_separador_1_margin_top_bottom">8dp</dimen>
+    <string name="iv_programas_layout_imagen_dimension_ratio">2:1.3</string>
+    <dimen name="iv_programas_layout_imagen_margin_top_bottom">4dp</dimen>
+    <dimen name="iv_programas_layout_imagen_margin_end">8dp</dimen>
+
+    <dimen name="tv_programas_layout_porcentaje_text_size">13sp</dimen>
+    <dimen name="pb_programas_item_progreso_height">6dp</dimen>
+</resources>

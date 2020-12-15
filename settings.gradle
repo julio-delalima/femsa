@@ -1,0 +1,13 @@
+include ':app', ':requestmanager'
+
+buildscript {
+    dependencies {
+        // Add this line
+        classpath 'com.google.gms:google-services:4.2.0'
+    }
+    repositories {
+        mavenCentral()
+        google()
+    }
+
+}

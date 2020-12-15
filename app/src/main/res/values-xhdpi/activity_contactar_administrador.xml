@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TOOLBAR ******************************************************************************* -->
+    <dimen name="tv_activity_contactar_administrador_toolbar_title_text_size">19sp</dimen>
+
+    <!-- CONTENIDO ***************************************************************************** -->
+    <dimen name="tv_contacto_titulo_text_size">18sp</dimen>
+    <dimen name="tv_contacto_descripción_text_size">13sp</dimen>
+    <dimen name="tv_contacto_informacion_titulo_text_size">14sp</dimen>
+    <dimen name="tv_contacto_informacion_contenido_text_size">16sp</dimen>
+    <dimen name="et_contacto_mensaje_text_size">16sp</dimen>
+    <dimen name="btn_activity_contactar_administrador_enviar_text_size">17sp</dimen>
+
+    <!-- DIALOG FRAGMENT *********************************************************************** -->
+    <dimen name="tv_mensaje_enviado_titulo_text_size">22sp</dimen>
+    <dimen name="tv_mensaje_enviado_contenido_text_size">16sp</dimen>
+    <dimen name="btn_fragment_mensaje_enviado_dialog_aceptar_text_size">16sp</dimen>
+</resources>

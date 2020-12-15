@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TÍTULO DEL TOOLBAR -->
+    <dimen name="objeto_aprendizaje_toolbar_title_text_size">25sp</dimen>
+
+    <!-- NOMBRE DEL OBJETO DE APRENDIZAJE -->
+    <dimen name="objeto_aprendizaje_nombre_text_size">38sp</dimen>
+
+    <!-- ALTO/ANCHO DEL CORAZÓN -->
+    <dimen name="objeto_aprendizaje_like_width_height">40dp</dimen>
+
+    <!-- ALTO/ANCHO DE LA CORCHOLATA -->
+    <dimen name="objeto_aprendizaje_corcholata_width_height">40dp</dimen>
+
+    <!-- NÚMERO DE CORCHOLATAS -->
+    <dimen name="objeto_aprendizaje__numero_corcholatas_text_size">26sp</dimen>
+
+    <!--
+    *TIEMPO ESTIMADO
+    *DESCRIPCIÓN
+     -->
+    <dimen name="objeto_aprendizaje_textos_generales_text_size">20sp</dimen>
+</resources>

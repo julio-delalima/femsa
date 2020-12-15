@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/primary_text</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/femsa_white</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="NumberPickerStyle">
+        <item name="android:textSize">22dp</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorControlActivated">@color/femsa_red_b</item>
+        <item name="android:colorControlNormal" tools:targetApi="lollipop">@color/femsa_red_b</item>
+    </style>
+
+    <!-- STYLE UTILIZADO PARA ELIMINAR LAS MAYÚSCULAS EN UN TabLayout ************************** -->
+    <style name="MyCustomTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- Style utilziado para todas las cardViews-->
+    <style name="cardViewFemsa" parent="CardView.Light">
+        <item name="cardCornerRadius">7dp</item>
+        <item name="cardElevation">3dp</item>
+    </style>
+
+    <!-- STYLE PARA EL COLOR DE LOS DÍAS EN EL CALENDARIO DE CÉLULAS DE ENTRENAMIENTO ********** -->
+    <style name="DayColorMaterialCalendarView" parent="TextAppearance.MaterialCalendarWidget.Date">
+        <item name="android:textColor">@drawable/selector_date_text_color</item>
+    </style>
+
+    <!-- STYLE PARA LAS ETIQUETAS DE LOS DÍAS DE LA SEMANA EN EL CALENDARIO DE CÉLULAS DE
+    ENTRENAMIENTO -->
+    <style name="WeekdayLabelMaterialCalendarView" parent="TextAppearance.MaterialCalendarWidget.WeekDay">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/femsa_black</item>
+    </style>
+
+    <!-- STYLE PARA LOS SWITCHES DE CONFIGURACION ********************************************** -->
+
+    <!-- STYLES PARA EL TabLayout DE activity_mis_recompensas.xml ****************************** -->
+    <style name="MisRecompensasTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/femsa_red_b</item>
+        <item name="tabIndicatorHeight">4dp</item>
+        <item name="tabMode">fixed</item>
+    </style>
+    <style name="MisRecompensasTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/activity_mis_recompensas_tab_item_text_size</item>
+    </style>
+
+    <!-- Style Para el hint color-->
+
+    <!-- Style Para el hint color-->
+</resources>
