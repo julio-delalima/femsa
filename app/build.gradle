@@ -11,13 +11,13 @@ android {
 
     signingConfigs {
         debug {
-            storeFile file('F:\\Documentos\\Repositorios\\femsa\\LlaveFemsa.p12')
+            storeFile file('C:\\FFOutput\\Sferea\\FEMSA\\LlaveFemsa.p12')
             storePassword 'FemsaSferea'
             keyAlias = 'LlaveFemsa12'
             keyPassword 'SfereaFemsa'
         }
         release {
-            storeFile file('F:\\Documentos\\Repositorios\\femsa\\LlaveFemsa.p12')
+            storeFile file('C:\\FFOutput\\Sferea\\FEMSA\\LlaveFemsa.p12')
             storePassword 'FemsaSferea'
             keyAlias = 'LlaveFemsa12'
             keyPassword 'SfereaFemsa'
@@ -30,7 +30,7 @@ android {
         applicationId 'com.femsa.sferea'
         minSdkVersion 21
         targetSdkVersion 29
-        versionCode 15
+        versionCode 16
         versionName "1.6.6.42"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         signingConfig signingConfigs.debug
@@ -111,7 +111,7 @@ dependencies {
     implementation 'com.github.ksoichiro:android-observablescrollview:1.6.0'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'com.github.prolificinteractive:material-calendarview:2.0.1'
-
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.room:room-testing:2.2.5'
     androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
